@@ -1,0 +1,52 @@
+/* for some reasons, tailwindcss does support opacity on these colors */
+:root {
+  /* generate from https://uicolors.app/create */
+  /* Flush Mahogany #cc313d */
+  --flush-mahogany-50: #fef3f2;
+  --flush-mahogany-100: #fce9e7;
+  --flush-mahogany-200: #f9d3d2;
+  --flush-mahogany-300: #f4aead;
+  --flush-mahogany-400: #ed7f7f;
+  --flush-mahogany-500: #e15256;
+  --flush-mahogany-600: #cc313d;
+  --flush-mahogany-700: #ac2432;
+  --flush-mahogany-800: #90212f;
+  --flush-mahogany-900: #7c1f2f;
+  --flush-mahogany-950: #450c14;
+  /*--flush-mahogany-rgb-50: rgb(254 243 242) */
+  /*--flush-mahogany-rgb-100: rgb(252 233 231) */
+  /*--flush-mahogany-rgb-200: rgb(249 211 210) */
+  /*--flush-mahogany-rgb-300: rgb(244 174 173) */
+  /*--flush-mahogany-rgb-400: rgba(237 127 127) */
+  /*--flush-mahogany-rgb-500: rgb(225 82 86) */
+  /*--flush-mahogany-rgb-600: rgb(204 49 61) */
+  /*--flush-mahogany-rgb-700: rgb(172 36 50) */
+  /*--flush-mahogany-rgb-800: rgb(144 33 47) */
+  /*--flush-mahogany-rgb-900: rgb(124 31 47) */
+  /*--flush-mahogany-rgb-950: rgb(69 12 20) */
+  --flush-mahogany-rgb-50: 254, 243, 242;
+  --flush-mahogany-rgb-100: 252, 233, 231;
+  --flush-mahogany-rgb-200: 249, 211, 210;
+  --flush-mahogany-rgb-300: 244, 174, 173;
+  --flush-mahogany-rgb-400: 237, 127, 127;
+  --flush-mahogany-rgb-500: 225, 82, 86;
+  --flush-mahogany-rgb-600: 204, 49, 61;
+  --flush-mahogany-rgb-700: 172, 36, 50;
+  --flush-mahogany-rgb-800: 144, 33, 47;
+  --flush-mahogany-rgb-900: 124, 31, 47;
+  --flush-mahogany-rgb-950: 69, 12, 20;
+  /* Custom Pink (because it's not tailwind default pink) #f7c5cc */
+  --custom-pink-50: #fef2f3;
+  --custom-pink-100: #fce7e8;
+  --custom-pink-200: #f7c5cc;
+  --custom-pink-300: #f4adb7;
+  --custom-pink-400: #ec8091;
+  --custom-pink-500: #e1526e;
+  --custom-pink-600: #cc3257;
+  --custom-pink-700: #ac2447;
+  --custom-pink-800: #902142;
+  --custom-pink-900: #7c1f3e;
+  --custom-pink-950: #440d1d;
+}
+
+/*# sourceMappingURL=custom-colors-additional.css.map */

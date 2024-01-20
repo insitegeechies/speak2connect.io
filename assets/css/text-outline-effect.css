@@ -1,0 +1,9 @@
+.text-transparent {
+  color: transparent;
+}
+
+.text-outline-size-1 {
+  -webkit-text-stroke-width: 1px;
+}
+
+/*# sourceMappingURL=text-outline-effect.css.map */

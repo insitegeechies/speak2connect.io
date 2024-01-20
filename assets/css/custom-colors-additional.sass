@@ -1,0 +1,30 @@
+/*
+  for some reasons, tailwindcss does support opacity on these colors -- and the reason being is that I used var
+  so we need to customize shorthand opacity
+  you can also use bg-{color) bg-{opacity}
+
+$counter: 95
+@while $counter >= 5
+  :is(.dark .dark\:bg-flushMahogany-950\/#{$counter}), .bg-flushMahogany-950\/#{$counter}
+    background-color: rgba(var(--flush-mahogany-rgb-950), $counter / 100)
+  :is(.dark .dark\:bg-flushMahogany-900\/#{$counter}), .bg-flushMahogany-900\/#{$counter}
+    background-color: rgba(var(--flush-mahogany-rgb-900), $counter / 100)
+  :is(.dark .dark\:bg-flushMahogany-800\/#{$counter}), .bg-flushMahogany-800\/#{$counter}
+    background-color: rgba(var(--flush-mahogany-rgb-800), $counter / 100)
+  :is(.dark .dark\:bg-flushMahogany-700\/#{$counter}), .bg-flushMahogany-700\/#{$counter}
+    background-color: rgba(var(--flush-mahogany-rgb-700), $counter / 100)
+  :is(.dark .dark\:bg-flushMahogany-600\/#{$counter}), .bg-flushMahogany-600\/#{$counter}
+    background-color: rgba(var(--flush-mahogany-rgb-600), $counter / 100)
+  :is(.dark .dark\:bg-flushMahogany-500\/#{$counter}), .bg-flushMahogany-500\/#{$counter}
+    background-color: rgba(var(--flush-mahogany-rgb-500), $counter / 100)
+  :is(.dark .dark\:bg-flushMahogany-400\/#{$counter}), .bg-flushMahogany-400\/#{$counter}
+    background-color: rgba(var(--flush-mahogany-rgb-400), $counter / 100)
+  :is(.dark .dark\:bg-flushMahogany-300\/#{$counter}), .bg-flushMahogany-300\/#{$counter}
+    background-color: rgba(var(--flush-mahogany-rgb-300), $counter / 100)
+  :is(.dark .dark\:bg-flushMahogany-200\/#{$counter}), .bg-flushMahogany-200\/#{$counter}
+    background-color: rgba(var(--flush-mahogany-rgb-200), $counter / 100)
+  :is(.dark .dark\:bg-flushMahogany-100\/#{$counter}), .bg-flushMahogany-100\/#{$counter}
+    background-color: rgba(var(--flush-mahogany-rgb-100), $counter / 100)
+  :is(.dark .dark\:bg-flushMahogany-50\/#{$counter}), .bg-flushMahogany-50\/#{$counter}
+    background-color: rgba(var(--flush-mahogany-rgb-50), $counter / 100)
+  $counter: $counter - 5
