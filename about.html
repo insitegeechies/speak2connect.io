@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en" data-theme="emerald">
+<head>
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content="width=device-width,height=device-height, initial-scale=1, shrink-to-fit=yes">
+
+    <!--theme colors -->
+    <meta name="theme-color" content="" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!--Basic meta info -->
+    <meta name="keywords" content="Virtual Assistant, REVA, Cold Caller, Data Entry, Lead Generation, Telemarketing, Admin Work, Website and App Development">
+    <meta name="author" content="Speak2Connect" />
+    <meta name="description" content="Elevate your business with top-notch REVA/Telemarketing services! Our expert team specializes in Appointment Setting, Cold Calling, Lead Generation, Telemarketing, Admin Work, and Virtual Assistant support. Experience the difference in quality service and watch your business thrive.">
+
+    <!--OpenGraph meta -->
+    <meta property="og:description" content="Elevate your business with top-notch REVA/Telemarketing services! Our expert team specializes in Appointment Setting, Cold Calling, Lead Generation, Telemarketing, Admin Work, and Virtual Assistant support. Experience the difference in quality service and watch your business thrive."/>
+    <meta property="og:title" content="Speak2Connect" />
+    <meta property="og:image" content="https://speak2connect.com/assets/images/speak2connect-open-graph-cover-2023.webp"/>
+    <meta property="og:url" content="https://speak2connect.com" />
+
+    <!--meta for twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@speak2connect">
+    <meta name="twitter:title" content="Speak2Connect">
+    <meta name="twitter:image" content="https://speak2connect.com/assets/images/speak2connect-open-graph-cover-2023.webp">
+    <meta name="twitter:site" content="@wrenSiteFX">
+    <meta name="twitter:description" content="Official Twitter Account of Speak2Connect VA Solutions">
+
+    <meta name="description" content="Elevate your business with top-notch REVA/Telemarketing services! Our expert team specializes in Appointment Setting, Cold Calling, Lead Generation, Telemarketing, Admin Work, and Virtual Assistant support. Experience the difference in quality service and watch your business thrive.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="http://speak2connect.com">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/webp" href="assets/images/logo/favicon-192x192.webp" sizes="192x192"/>
+    <link rel="icon" type="image/webp" href="assets/images/logo/favicon-160x160.webp" sizes="160x160"/>
+    <link rel="icon" type="image/webp" href="assets/images/logo/favicon-96x96.webp" sizes="96x96"/>
+    <link rel="icon" type="image/webp" href="assets/images/logo/favicon-32x32.webp" sizes="32x32"/>
+    <link rel="icon" type="image/webp" href="assets/images/logo/favicon-16x16.webp" sizes="16x16"/>
+    <link rel="apple-touch-icon" type="image/webp" href="assets/images/logo/apple-touch-icon-180x180.webp" sizes="180x180"/>
+    <link rel="apple-touch-icon" type="image/webp" href="assets/images/logo/apple-touch-icon-152x152.webp" sizes="152x152"/>
+    <link rel="apple-touch-icon" type="image/webp" href="assets/images/logo/apple-touch-icon-144x144.webp" sizes="144x144"/>
+    <link rel="apple-touch-icon" type="image/webp" href="assets/images/logo/apple-touch-icon-120x120.webp" sizes="120x120"/>
+    <link rel="apple-touch-icon" type="image/webp" href="assets/images/logo/apple-touch-icon-114x144.webp" sizes="114x114"/>
+    <link rel="apple-touch-icon" type="image/webp" href="assets/images/logo/apple-touch-icon-76x76.webp" sizes="76x76"/>
+    <link rel="apple-touch-icon" type="image/webp" href="assets/images/logo/apple-touch-icon-72x72.webp" sizes="72x72"/>
+    <link rel="apple-touch-icon" type="image/webp" href="assets/images/logo/apple-touch-icon-60x60.webp" sizes="60x60"/>
+    <link rel="apple-touch-icon" type="image/webp" href="assets/images/logo/apple-touch-icon-52x52.webp" sizes="52x52"/>
+
+    <title>Speak2Connect</title>
+
+    <!-- stylesheets -->
+    <link rel="preload" href="assets/css/styles.css" as="style">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preload" href="assets/css/additional-styles.css" as="style">
+    <link rel="stylesheet" href="assets/css/additional-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('wsf-color-theme') === 'dark' || (!('wsf-color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body class="antialiased overflow-x-hidden bg-yellow-metal-500 dark:bg-black">
+
+<button id="theme-toggle" type="button" class="fixed bottom-12 right-12 z-40 group flex h-16 w-16 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-white dark:before:bg-gray-800 dark:before:border-gray-700 before:border before:border-gray-300 before:transition before:duration-300 disabled:before:bg-gray-300 disabled:before:scale-100 ml-5">
+    <svg id="theme-toggle-light-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+         class="relative w-8 h-8 text-yellow-500 duration-300 group-hover:rotate-180 group-hover:scale-150 hidden">
+        <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+    </svg>
+    <svg id="theme-toggle-dark-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+         class="relative w-8 h-8 text-gray-600 duration-300 group-hover:-rotate-90 group-hover:scale-150 hidden">
+        <path fill-rule="evenodd"
+              d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+              clip-rule="evenodd" />
+    </svg>
+</button>
+
+<section id="about" class="min-h-screen z-10 pb-96 fixed">
+    <div class="w-full">
+        <div class="top-0 left-0">
+            <h2 class="xs:text-[12rem] sm-md:text-[25rem] lg:text-[25rem] 2xl:text-[30rem] text-transparent text-outline-size-1 text-outline-asphalt-950 dark:text-outline-customPink-100 absolute opacity-20 xl-only:-ml-28">AboutUs</h2>
+        </div>
+    </div>
+</section>
+
+<header class="bg-gradient-to-b from-black to-gold-500">
+    <section class="fixed w-full z-50">
+        <nav id="navigation" class="min-h-24 flex items-center justify-center transition-all duration-700">
+            <div class="navbar xs:w-full sm:container m-auto">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden hover:bg-gold-500 focus:bg-gold-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box min-w-52">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="./services.html">Services</a></li>
+                            <li><a href="./reviews.html">Testimonial</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li class="hidden">
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div><img src="assets/images/logo/speak2connect-logo-512px.webp" class="w-16 bg-black rounded-full" alt=""></div>
+                    <a href="#!" id="site_name" class="text-xl xs:hidden pb-2 px-4 bg-left-bottom xs:text-flushMahogany-100 bg-gradient-to-r from-secondary to-gold-600 bg-[length:0%_2px] bg-no-repeat transition-all duration-500 ease-out text-secondary dark:text-white">Speak2Connect</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-secondary dark:text-gray-100">
+                        <li class="menu-list text-underscore-effect duration-300"><a href="#">Home</a></li>
+                        <li class="menu-list text-underscore-effect duration-300"><a href="./services">Services</a></li>
+                        <li class="menu-list text-underscore-effect duration-300"><a href="./reviews.html">Testimonials</a></li>
+                        <li class="menu-list text-underscore-effect duration-300"><a href="./about.html">About</a></li>
+                        <li class="hidden">
+                            <details>
+                                <summary>Parent</summary>
+                                <ul class="p-2 w-max">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li class="menu-list text-underscore-effect duration-300"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a id="navbar-button" href="#!" class="xs:p-4 px-8 py-4 border border-b-2 border-gold-500 dark:border-white hover:border-none hover:bg-gold-400 transition duration-500 ease-in-out text-gold-500 dark:text-white hover:text-secondary dark:hover:bg-secondary hover:shadow-sm hover:shadow-white">Talk to us</a>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+</header>
+
+<section class="z-20 relative min-h-screen pt-48">
+    <div class="container mx-auto min-h-screen items-center justify-center w-full">
+        <div class="pb-24 max-w-screen xs:max-w-full sm:max-w-max">
+            <div class="xl-only:px-3 mb-12 sm:container mx-auto">
+                <div class="text-left xs:pb-1 lg:pb-2 pb-8 flex">
+                    <h1 class="xs:text-3xl text-3xl lg:text-2xl text-double-spanish-white-200 dark:text-primary">The Team</h1>
+                </div>
+                <h2 class="xs:text-6xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-secondary dark:text-gold-500 xs:leading-normal md:leading-snug intro">Who are we</h2>
+            </div>
+            <div class="relative container mx-auto pt-12 z-20">
+                <div class="*:text-white">
+                    <p class="py-2 max-w-[1080px]">At our core, we are a team dedicated to delivering top-notch service in a variety of domains. As experts in the realm of REVA (Real Estate Virtual Assistant)/Telemarketing, Appointment Setting, Cold Calling, Lead Generation, Telemarketing, Admin Work, Website and Web-based App Development, and Virtual Assistance, we pride ourselves on our commitment to excellence.</p>
+                    <p class="py-2 max-w-[1080px]">While our team was only established in 2018, every member of our team had been handling calls for years, and we can say that we are used to talking to people and building rapport. We are go-getters, we focus more on the solutions than pointing fingers and getting stuck with a problem. We make sure that we produce quality calls.</p>
+                    <p class="py-2 max-w-[1080px]">We are efficient in skip and list tracing using Popstream and spreadsheets. We can submit up to 400 leads in a day. We are trainable, submit tasks with quality, and we assure you that we work with integrity. </p>
+                    <p class="py-2 max-w-[1080px]">We offer a variety of services that would help our client's company grow, such as:</p>
+                    <ul class="py-2 max-w-[1080px] list-disc">
+                        <li class="list-inside">Cold Calling</li>
+                        <li class="list-inside">Warm Calling</li>
+                        <li class="list-inside">Lead Nurturing</li>
+                        <li class="list-inside">List Tracing</li>
+                        <li class="list-inside">Chat Support</li>
+                        <li class="list-inside">Email Support</li>
+                        <li class="list-inside">Email handling</li>
+                        <li class="list-inside">Quality Assurance Analyst</li>
+                    </ul>
+                    <p class="py-2 max-w-[1080px]">We highly value professional commitment and the client's reputation. We always make sure to go the extra mile to provide high-quality service on every task the client has assigned to me. We work with integrity and with little to no supervision needed.</p>
+                    <p class="py-2 max-w-[1080px]">We are efficient in variety of tools, such as:</p>
+                    <div class="grid xs:grid-cols-3 2xl:grid-cols-6 gap-2 max-w-[1080px] *:rounded-md">
+                        <img src="assets/images/companies/readymode-formerly-xencall-logo.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/podio-logo.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/gohighlevel-logo.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/vicidial-logo.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/net2phone.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/followupboss-logo.webp" alt="ready mode formerly xencall">
+
+                        <img src="assets/images/companies/prospect-boss-logo.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/mojo-logo.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/resimpli-logo.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/propstream-logo.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/whitepages-logo.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/whatsapp-logo.webp" alt="ready mode formerly xencall">
+
+                        <img src="assets/images/companies/slack-logo.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/webex-logo.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/calltools-logo.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/batchdialer-logo.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/redx-logo.webp" alt="ready mode formerly xencall">
+                        <img src="assets/images/companies/cinc-logo.webp" alt="ready mode formerly xencall">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="2xl:w-5/12 absolute bottom-0 right-0">
+            <img src="assets/images/startup-593341_1920.jpg" class="shadow-2xl rounded-tl-3xl block" />
+            <div class="absolute inset-0 bg-black opacity-70 rounded-tl-3xl"></div>
+        </div>
+    </div>
+</section>
+
+<section id="the-team" class="py-24 bg-primary dark:bg-secondary relative z-20">
+    <div class="min-h-screen flex items-center justify-center container mx-auto">
+        <div class="w-full">
+            <div class="xl-only:px-3 mb-12 sm:container mx-auto">
+                <div class="text-left xs:pb-1 lg:pb-2 pb-8 flex">
+                    <h1 class="xs:text-3xl text-3xl lg:text-2xl text-double-spanish-white-200 dark:text-primary">Meet The Team</h1>
+                </div>
+                <h2 class="xs:text-6xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-secondary dark:text-gold-500 xs:leading-normal md:leading-snug intro">Our Family</h2>
+            </div>
+            <div class="xs:pt-6 pt-12 pb-8">
+                <h4 class="text-center text-3xl text-yellow-metal-950">Admin Team</h4>
+            </div>
+            <div class="grid grid-cols-3 xs:grid-cols-1 mx-auto gap-6">
+
+                <div class="col-span-1 flex flex-col divide-y divide-gray-200 dark:divide-gold-500 rounded-lg text-center border border-white dark:border-gold-500">
+                    <div class="flex flex-1 flex-col">
+                        <div class="w-1/2 mx-auto pt-4">
+                            <img class="mx-auto rounded-full bg-gold-600 shadow-black dark:shadow-primary shadow-lg" src="assets/images/profiles/speak2connect-aenesis-jireh-l-alt.webp" alt="">
+                        </div>
+                        <div class="bg-white dark:bg-gold-500 mt-4 pb-4 min-h-[15rem]">
+                        <h3 class="mt-6 text-2xl font-medium text-yellow-metal-900 dark:text-yellow-metal-900">A. Jireh Lim</h3>
+                            <div class="mt-1 flex flex-grow flex-col justify-between px-6 gap-y-3">
+                                <h4 class="text-sm text-black">Co-Managing Partner</h4>
+                                <p class="text-xs text-yellow-metal-900 dark:text-black">I got my first job when I was 18 years old as Market Research interviewer for 9 months then my contract ended. Then, I worked as General Customer Care Representative where we receive queries, concerns, and complaints from the customers and we also do sales pitch, which lasted for 3 months. I then applied back to my first job and stayed there for more than 4 years, wherein I eventually got promoted to a Project Supervisor for 6 months. Afterward, I left the corporate world and started my journey as a freelancer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="-mt-px flex divide-x divide-gray-200 dark:divide-gold-500">
+                            <div class="flex w-0 flex-1">
+                                <a href="mailto:jireh@speak2connect.org" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white">
+                                    <i class="fa fa-envelope h-5 w-auto text-gold-500"></i>
+                                    <span class="xs:hidden">jireh@speak2connect.org</span>
+                                </a>
+                            </div>
+                            <div class="-ml-px flex w-0 flex-1">
+                                <a href="https://www.upwork.com/freelancers/~01b78aa39cb9e3a47a/" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white" rel="noreferrer nofollow" target="_blank">
+                                    <i class="fa-brands fa-upwork text-gold-500 h-5 w-auto"></i>
+                                    <span class="xs:hidden">Upwork Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 flex flex-col divide-y divide-gray-200 dark:divide-gold-500 rounded-lg text-center border border-white dark:border-gold-500">
+                    <div class="flex flex-1 flex-col">
+                        <div class="w-1/2 mx-auto pt-4">
+                            <img class="mx-auto rounded-full bg-gold-600 shadow-black dark:shadow-primary shadow-lg" src="assets/images/profiles/speak2connect-krystal-jade-n-alt.webp" alt="">
+                        </div>
+                        <div class="bg-white dark:bg-gold-500 mt-4 pb-4 min-h-[15rem]">
+                            <h3 class="mt-6 text-2xl font-medium text-yellow-metal-900 dark:text-yellow-metal-900">Krystal Jade L.</h3>
+                            <div class="mt-1 flex flex-grow flex-col justify-between px-6 gap-y-3">
+                                <h4 class="text-sm text-black">Team Leader</h4>
+                                <p class="text-xs text-yellow-metal-900 dark:text-black">Experienced ISA/Appointment Setter/ Cold Caller. I am a go-getter, and problem solver. I have been in this industry for a decade now. I have done appointment setting and cold calling and was able to give quality leads. I am a go-getter, and problem solver, and I can work with less supervision.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="-mt-px flex divide-x divide-gray-200 dark:divide-gold-500">
+                            <div class="flex w-0 flex-1">
+                                <a href="mailto:krystal@speak2connect.org" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white">
+                                    <i class="fa fa-envelope h-5 w-auto text-gold-500"></i>
+                                    <span class="xs:hidden">krystal@speak2connect.org</span>
+                                </a>
+                            </div>
+                            <div class="-ml-px flex w-0 flex-1">
+                                <a href="https://www.upwork.com/freelancers/~01430f9041e8b41d7d/" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white" rel="noreferrer nofollow" target="_blank">
+                                    <i class="fa-brands fa-upwork text-gold-500 h-5 w-auto"></i>
+                                    <span class="xs:hidden">Upwork Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 flex flex-col divide-y divide-gray-200 dark:divide-gold-500 rounded-lg text-center border border-white dark:border-gold-500">
+                    <div class="flex flex-1 flex-col">
+                        <div class="w-1/2 mx-auto pt-4">
+                            <img class="mx-auto rounded-full bg-gold-600 shadow-black dark:shadow-primary shadow-lg" src="assets/images/profiles/speak2connect-jerfel-s-alt.webp" alt="">
+                        </div>
+                        <div class="bg-white dark:bg-gold-500 mt-4 pb-4 min-h-[15rem]">
+                            <h3 class="mt-6 text-2xl font-medium text-yellow-metal-900 dark:text-yellow-metal-900">Jerfel S.</h3>
+                            <div class="mt-1 flex flex-grow flex-col justify-between px-6 gap-y-3">
+                                <h4 class="text-sm text-black">Admin</h4>
+                                <p class="text-xs text-yellow-metal-900 dark:text-black">I was a student with no experience in the freelancing world until an opportunity was given and landed me a part-time job. From there I established a portfolio of jobs and the next opportunity to hone my skills came after the other. I excel in MS Office and admin tasks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="-mt-px flex divide-x divide-gray-200 dark:divide-gold-500">
+                            <div class="flex w-0 flex-1">
+                                <a href="mailto:jerfel@speak2connect.org" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white">
+                                    <i class="fa fa-envelope h-5 w-auto text-gold-500"></i>
+                                    <span class="xs:hidden">jerfel@speak2connect.org</span>
+                                </a>
+                            </div>
+                            <div class="-ml-px flex w-0 flex-1">
+                                <a href="https://www.upwork.com/freelancers/~01b78aa39cb9e3a47a/" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white" rel="noreferrer nofollow" target="_blank">
+                                    <i class="fa-brands fa-upwork text-gold-500 h-5 w-auto"></i>
+                                    <span class="xs:hidden">Upwork Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col divide-y divide-gray-200 dark:divide-gold-500 rounded-lg text-center border border-white dark:border-gold-500">
+                    <div class="flex flex-1 flex-col">
+                        <div class="w-1/2 mx-auto pt-4">
+                            <img class="mx-auto rounded-full bg-gold-600 shadow-black dark:shadow-primary shadow-lg" src="assets/images/profiles/speak2connect-elaine-monica-n-alt.webp" alt="">
+                        </div>
+                        <div class="bg-white dark:bg-gold-500 mt-4 pb-4 min-h-[15rem]">
+                            <h3 class="mt-6 text-2xl font-medium text-yellow-metal-900 dark:text-yellow-metal-900">Elaine Monica N.</h3>
+                            <div class="mt-1 flex flex-grow flex-col justify-between px-6 gap-y-3">
+                                <h4 class="text-sm text-black">Manager</h4>
+                                <p class="text-xs text-yellow-metal-900 dark:text-black">I am Elaine - your writer and virtual assistant in one. I started writing as a grader and made it my job when I reached the legal age. I then upskilled and explored roles, to where then I became a virtual assistant. I have been with different roles and clients, all whom I've been working long-term with.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="-mt-px flex divide-x divide-gray-200 dark:divide-gold-500">
+                            <div class="flex w-0 flex-1">
+                                <a href="mailto:elaine@speak2connect.org" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white">
+                                    <i class="fa fa-envelope h-5 w-auto text-gold-500"></i>
+                                    <span class="xs:hidden">elaine@speak2connect.org</span>
+                                </a>
+                            </div>
+                            <div class="-ml-px flex w-0 flex-1">
+                                <a href="https://www.upwork.com/freelancers/~018ed01242eb76e90a/" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white" rel="noreferrer nofollow" target="_blank">
+                                    <i class="fa-brands fa-upwork text-gold-500 h-5 w-auto"></i>
+                                    <span class="xs:hidden">Upwork Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col divide-y divide-gray-200 dark:divide-gold-500 rounded-lg text-center border border-white dark:border-gold-500">
+                    <div class="flex flex-1 flex-col">
+                        <div class="w-1/2 mx-auto pt-4">
+                            <img class="mx-auto rounded-full bg-gold-600 shadow-black dark:shadow-primary shadow-lg" src="assets/images/profiles/speak2connect-jazzmine-c-alt.webp" alt="">
+                        </div>
+                        <div class="bg-white dark:bg-gold-500 mt-4 pb-4 min-h-[15rem]">
+                            <h3 class="mt-6 text-2xl font-medium text-yellow-metal-900 dark:text-yellow-metal-900">Jazzmine C.</h3>
+                            <div class="mt-1 flex flex-grow flex-col justify-between px-6 gap-y-3">
+                                <h4 class="text-sm text-black">Trainer</h4>
+                                <p class="text-xs text-yellow-metal-900 dark:text-black">I am connected to thousands of hiring managers, recruiters, and job boards globally. If you are seeking a new position, I can be a valuable, free resource for you.  Whatever is your industry sector, specialty, or location, I have the connections to help you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="-mt-px flex divide-x divide-gray-200 dark:divide-gold-500">
+                            <div class="flex w-0 flex-1">
+                                <a href="mailto:jazz@speak2connect.org" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white">
+                                    <i class="fa fa-envelope h-5 w-auto text-gold-500"></i>
+                                    <span class="xs:hidden">jazz@speak2connect.org</span>
+                                </a>
+                            </div>
+                            <div class="-ml-px flex w-0 flex-1">
+                                <a href="https://www.upwork.com/freelancers/~01430f9041e8b41d7d/" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white" rel="noreferrer nofollow" target="_blank">
+                                    <i class="fa-brands fa-upwork text-gold-500 h-5 w-auto"></i>
+                                    <span class="xs:hidden">Upwork Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 flex flex-col divide-y divide-gray-200 dark:divide-gold-500 rounded-lg text-center border border-white dark:border-gold-500">
+                    <div class="flex flex-1 flex-col">
+                        <div class="w-1/2 mx-auto pt-4">
+                            <img class="mx-auto rounded-full bg-gold-600 shadow-black dark:shadow-primary shadow-lg" src="assets/images/profiles/speak2connect-novy-mae-a-alt.webp" alt="">
+                        </div>
+                        <div class="bg-white dark:bg-gold-500 mt-4 pb-4 min-h-[15rem]">
+                            <h3 class="mt-6 text-2xl font-medium text-yellow-metal-900 dark:text-yellow-metal-900">Novy Mae A.</h3>
+                            <div class="mt-1 flex flex-grow flex-col justify-between px-6 gap-y-3">
+                                <h4 class="text-sm text-black">Manager</h4>
+                                <p class="text-xs text-yellow-metal-900 dark:text-black">I'm a cold caller and I've been handling phone calls with Speak2Connect since 2023. I can work with less to no supervision.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="-mt-px flex divide-x divide-gray-200 dark:divide-gold-500">
+                            <div class="flex w-0 flex-1">
+                                <a href="mailto:elaine@speak2connect.org" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm text-gold-300 dark:text-white">
+                                    <i class="fa fa-envelope h-5 w-auto text-gold-500"></i>
+                                    <span class="xs:hidden">elaine@speak2connect.org</span>
+                                </a>
+                            </div>
+                            <div class="-ml-px flex w-0 flex-1">
+                                <a href="https://www.upwork.com/freelancers/~018ed01242eb76e90a/" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white" rel="noreferrer nofollow" target="_blank">
+                                    <i class="fa-brands fa-upwork text-gold-500 h-5 w-auto"></i>
+                                    <span class="xs:hidden">Upwork Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-12 pb-8">
+                <h4 class="text-center text-3xl text-yellow-metal-950 dark:text-white">Awesome Talents</h4>
+            </div>
+            <div class="grid grid-cols-3 xs:grid-cols-1 mx-auto gap-6">
+
+                <div class="col-span-1 flex flex-col divide-y divide-gray-200 dark:divide-gold-500 rounded-lg text-center border border-white dark:border-gold-500">
+                    <div class="flex flex-1 flex-col">
+                        <div class="w-1/2 mx-auto pt-4">
+                            <img class="mx-auto rounded-full bg-gold-600 shadow-black dark:shadow-primary shadow-lg" src="assets/images/profiles/speak2connect-maria-adette-o-alt.webp" alt="">
+                        </div>
+                        <div class="bg-white dark:bg-gold-500 mt-4 pb-4 min-h-[15rem]">
+                            <h3 class="mt-6 text-2xl font-medium text-yellow-metal-900 dark:text-yellow-metal-900">Maria Adette O.</h3>
+                            <div class="mt-1 flex flex-grow flex-col justify-between px-6 gap-y-3">
+                                <h4 class="text-sm text-black">Seasoned VA</h4>
+                                <p class="text-xs text-yellow-metal-900 dark:text-black">I've been working as a Cold Caller/Telemarketer for the last 5 years. Over the years my communication skills has developed a lot and eventually it helped me to become an expert of Appointment Setting/Telemarketing. I'm Very punctual, had working and can work with less supervision. I do not like to do any compromise when it comes to my work.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="-mt-px flex divide-x divide-gray-200 dark:divide-gold-500">
+                            <div class="flex w-0 flex-1">
+                                <a href="mailto:adette@speak2connect.org" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white">
+                                    <i class="fa fa-envelope h-5 w-auto text-gold-500"></i>
+                                    <span class="xs:hidden">adette@speak2connect.org</span>
+                                </a>
+                            </div>
+                            <div class="-ml-px flex w-0 flex-1">
+                                <a href="https://www.upwork.com/freelancers/~01164d9a86e4479514/" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white" rel="noreferrer nofollow" target="_blank">
+                                    <i class="fa-brands fa-upwork text-gold-500 h-5 w-auto"></i>
+                                    <span class="xs:hidden">Upwork Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 flex flex-col divide-y divide-gray-200 dark:divide-gold-500 rounded-lg text-center border border-white dark:border-gold-500">
+                    <div class="flex flex-1 flex-col">
+                        <div class="w-1/2 mx-auto pt-4">
+                            <img class="mx-auto rounded-full bg-gold-600 shadow-black dark:shadow-primary shadow-lg" src="assets/images/profiles/speak2connect-meraldine-e-alt.webp" alt="">
+                        </div>
+                        <div class="bg-white dark:bg-gold-500 mt-4 pb-4 min-h-[15rem]">
+                            <h3 class="mt-6 text-2xl font-medium text-yellow-metal-900 dark:text-yellow-metal-900">Meraldine E.</h3>
+                            <div class="mt-1 flex flex-grow flex-col justify-between px-6 gap-y-3">
+                                <h4 class="text-sm text-black">Seasoned Talent</h4>
+                                <p class="text-xs text-yellow-metal-900 dark:text-black">To be able to share my skills as a Virtual Assistant and enhance for further potential. Skilled Market
+                                    Research Interviewer committed to maintaining a high level of professionalism. Skilled Customer Service
+                                    Representative committed to maintaining a high level of professionalism and patience as well as
+                                    addressing customer concerns timely and accurately. Excellent computer skills and telephone etiquette.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="-mt-px flex divide-x divide-gray-200 dark:divide-gold-500">
+                            <div class="flex w-0 flex-1">
+                                <a href="mailto:meraldine@speak2connect.org" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white">
+                                    <i class="fa fa-envelope h-5 w-auto text-gold-500"></i>
+                                    <span class="xs:hidden">meraldine@speak2connect.org</span>
+                                </a>
+                            </div>
+                            <div class="-ml-px flex w-0 flex-1">
+                                <a href="https://www.upwork.com/freelancers/~014c3e0d1a14b30398/" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white" rel="noreferrer nofollow" target="_blank">
+                                    <i class="fa-brands fa-upwork text-gold-500 h-5 w-auto"></i>
+                                    <span class="xs:hidden">Upwork Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 flex flex-col divide-y divide-gray-200 dark:divide-gold-500 rounded-lg text-center border border-white dark:border-gold-500">
+                    <div class="flex flex-1 flex-col">
+                        <div class="w-1/2 mx-auto pt-4">
+                            <img class="mx-auto rounded-full bg-gold-600 shadow-black dark:shadow-primary shadow-lg" src="assets/images/logo/speak2connect-logo-512px.webp" alt="">
+                        </div>
+                        <div class="bg-white dark:bg-gold-500 mt-4 pb-4 min-h-[15rem]">
+                            <h3 class="mt-6 text-2xl font-medium text-yellow-metal-900 dark:text-yellow-metal-900">Blondie Christine R.</h3>
+                            <div class="mt-1 flex flex-grow flex-col justify-between px-6 gap-y-3">
+                                <h4 class="text-sm text-black">Seasoned Talent</h4>
+                                <p class="text-xs text-yellow-metal-900 dark:text-black">im a cold caller and an appointment setter since 2018.
+                                    my experience mostly for real state campaign voice account.i know how Microsoft Excel. I have a perseverance and I'm a determined person, and i am confident with my skills and talent and I know I can contribute towards company goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="-mt-px flex divide-x divide-gray-200 dark:divide-gold-500">
+                            <div class="flex w-0 flex-1">
+                                <a href="mailto:blondie@speak2connect.org" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white">
+                                    <i class="fa fa-envelope h-5 w-auto text-gold-500"></i>
+                                    <span class="xs:hidden">blondie@speak2connect.org</span>
+                                </a>
+                            </div>
+                            <div class="-ml-px flex w-0 flex-1">
+                                <a href="https://www.upwork.com/freelancers/~01693544068a116654/" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white" rel="noreferrer nofollow" target="_blank">
+                                    <i class="fa-brands fa-upwork text-gold-500 h-5 w-auto"></i>
+                                    <span class="xs:hidden">Upwork Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col divide-y divide-gray-200 dark:divide-gold-500 rounded-lg text-center border border-white dark:border-gold-500">
+                    <div class="flex flex-1 flex-col">
+                        <div class="w-1/2 mx-auto pt-4">
+                            <img class="mx-auto rounded-full bg-gold-600 shadow-black dark:shadow-primary shadow-lg" src="assets/images/logo/speak2connect-logo-512px.webp" alt="">
+                        </div>
+                        <div class="bg-white dark:bg-gold-500 mt-4 pb-4 min-h-[15rem]">
+                            <h3 class="mt-6 text-2xl font-medium text-yellow-metal-900 dark:text-yellow-metal-900">Leilani E.</h3>
+                            <div class="mt-1 flex flex-grow flex-col justify-between px-6 gap-y-3">
+                                <h4 class="text-sm text-black">Seasoned Talent</h4>
+                                <p class="text-xs text-yellow-metal-900 dark:text-black"> worked with Real Estate Investors, I used to call and set appointments for both buyer and seller lists, administrative tasks, cold calls, SMS campaigns, skip trace, and social media management.
+                                    I do lead management too. I pre-qualify leads based on temperature, and follow-up calls, and nurture cold leads.
+                                    My target number of leads per day is a minimum of four depending on the list and the client’s preferences of lead temperature.
+                                    I have handled CRMs and dialers like Podio, popstreams, ready mode, calltools, ring central, ReiReply and mojosells.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="-mt-px flex divide-x divide-gray-200 dark:divide-gold-500">
+                            <div class="flex w-0 flex-1">
+                                <a href="mailto:leilani@speak2connect.org" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white">
+                                    <i class="fa fa-envelope h-5 w-auto text-gold-500"></i>
+                                    <span class="xs:hidden">leilani@speak2connect.org</span>
+                                </a>
+                            </div>
+                            <div class="-ml-px flex w-0 flex-1">
+                                <a href="https://www.upwork.com/freelancers/~0112eb9c7fe66f5725/" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white" rel="noreferrer nofollow" target="_blank">
+                                    <i class="fa-brands fa-upwork text-gold-500 h-5 w-auto"></i>
+                                    <span class="xs:hidden">Upwork Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col divide-y divide-gray-200 dark:divide-gold-500 rounded-lg text-center border border-white dark:border-gold-500">
+                    <div class="flex flex-1 flex-col">
+                        <div class="w-1/2 mx-auto pt-4">
+                            <img class="mx-auto rounded-full bg-gold-600 shadow-black dark:shadow-primary shadow-lg" src="assets/images/profiles/speak2connect-dhonabel-grace-a-alt.webp" alt="">
+                        </div>
+                        <div class="bg-white dark:bg-gold-500 mt-4 pb-4 min-h-[15rem]">
+                            <h3 class="mt-6 text-2xl font-medium text-yellow-metal-900 dark:text-yellow-metal-900">Dhonabel Grace A.</h3>
+                            <div class="mt-1 flex flex-grow flex-col justify-between px-6 gap-y-3">
+                                <h4 class="text-sm text-black">Rising Talent</h4>
+                                <p class="text-xs text-yellow-metal-900 dark:text-black">I have been handling calls for 8 years now and I can say that I am used to talking to people and building rapport with them. I am a go-getter, I focus more on the solutions rather than pointing fingers and got stuck in a problem. I make sure that I produce quality calls.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="-mt-px flex divide-x divide-gray-200 dark:divide-gold-500">
+                            <div class="flex w-0 flex-1">
+                                <a href="mailto:dhonabel@speak2connect.org" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white">
+                                    <i class="fa fa-envelope h-5 w-auto text-gold-500"></i>
+                                    <span class="xs:hidden">dhonabel@speak2connect.org</span>
+                                </a>
+                            </div>
+                            <div class="-ml-px flex w-0 flex-1">
+                                <a href="https://www.upwork.com/freelancers/~019c55aba8fb8d99cc/" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white" rel="noreferrer nofollow" target="_blank">
+                                    <i class="fa-brands fa-upwork text-gold-500 h-5 w-auto"></i>
+                                    <span class="xs:hidden">Upwork Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 flex flex-col divide-y divide-gray-200 dark:divide-gold-500 rounded-lg text-center border border-white dark:border-gold-500">
+                    <div class="flex flex-1 flex-col">
+                        <div class="w-1/2 mx-auto pt-4">
+                            <img class="mx-auto rounded-full bg-gold-600 shadow-black dark:shadow-primary shadow-lg" src="assets/images/profiles/speak2connect-karen-l-alt.webp" alt="">
+                        </div>
+                        <div class="bg-white dark:bg-gold-500 mt-4 pb-4 min-h-[15rem]">
+                            <h3 class="mt-6 text-2xl font-medium text-yellow-metal-900 dark:text-yellow-metal-900">Karen L.</h3>
+                            <div class="mt-1 flex flex-grow flex-col justify-between px-6 gap-y-3">
+                                <h4 class="text-sm text-black">Seasoned Talent</h4>
+                                <p class="text-xs text-yellow-metal-900 dark:text-black">I have more than 5 years of experience working online. I am well versed in all areas of administrative work, as well as Real Estate Cold calling, SMS lead generation, and Customer Service. I am a highly results-oriented individual with years of experience in customer service. I thrive in team settings and work efficiently to solve customer problems while remaining cool under pressure. As a Real Estate Cold caller and SMS lead generator, I am well-trained in this field. Provide potential leads with outstanding closing results.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="-mt-px flex divide-x divide-gray-200 dark:divide-gold-500">
+                            <div class="flex w-0 flex-1">
+                                <a href="mailto:karen@speak2connect.org" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm text-gold-300 dark:text-white">
+                                    <i class="fa fa-envelope h-5 w-auto text-gold-500"></i>
+                                    <span class="xs:hidden">karen@speak2connect.org</span>
+                                </a>
+                            </div>
+                            <div class="-ml-px flex w-0 flex-1">
+                                <a href="https://www.upwork.com/freelancers/~01197873c6dac3c80b/" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm  text-gold-300 dark:text-white" rel="noreferrer nofollow" target="_blank">
+                                    <i class="fa-brands fa-upwork text-gold-500 h-5 w-auto"></i>
+                                    <span class="xs:hidden">Upwork Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="min-h-[50vh] m-auto py-24 bg-asphalt-900 dark:bg-yellow-metal-500 relative z-10">
+    <div class="max-w-screen-xl mx-auto px-6 md:px-8 lg:px-12 pt-6 lg:pt-12 pb-6 lg:pb-12">
+        <div class="bg-gold-600 dark:bg-black py-8 lg:py-12 px-6 relative text-center">
+            <h5 class="text-2xl sm:text-3xl lg:text-6xl text-white dark:text-primary mb-4">
+                Elevate your business with top-notch services!
+            </h5>
+            <p class="prose lg:prose-lg xl:prose-2xl mx-auto text-gray-200">Help us help you grow.</p>
+            <div class="h-12 w-12 bg-gold-600 dark:bg-black left-1/2 -ml-6 -bottom-6 absolute transform rotate-45">&nbsp;</div>
+        </div>
+        <div class="pt-12 lg:pt-16 text-center">
+            <a href="#"
+               class="bg-none border border-gold-300 hover:border-gold-500 transition duration-500 ease-in-out text-gold-300 hover:text-gold-500 px-4 lg:px-8 py-4 inline-block font-bold rounded-none shadow-xl hover:bg-yellow-metal-700 hover:shadow-sm hover:shadow-white">Start Today!</a>
+            <p class="pt-4 text-gold-500 dark:text-gold-300">No credit card required, cancel anytime.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="relative min-h-[50vh] bg-black z-20 py-36 xs:py-16 xs:pb-36">
+    <div class="xs:w-full sm:container mx-auto px-16">
+        <div class="grid grid-cols-3 xs:grid-cols-1 xs:mx-auto xs:space-y-6">
+            <div class="flex items-center gap-4">
+                <i class="fa fa-location text-gold-500 text-2xl"></i>
+                <div>
+                    <h2 class="text-gold-500 block font-montserrat">Find us</h2>
+                    <p class="text-xs text-double-spanish-white-100">Davao City</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="fa fa-phone-alt text-gold-500 text-2xl"></i>
+                <div>
+                    <h2 class="text-gold-500 block font-montserrat">Call us</h2>
+                    <p class="text-xs text-double-spanish-white-100">+63 999 123 4567</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="fa fa-envelope-open text-gold-500 text-2xl"></i>
+                <div>
+                    <h2 class="text-gold-500 block font-montserrat">Mail us</h2>
+                    <p class="text-xs text-double-spanish-white-100">info@speak2connect.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="grid grid-cols-3 xs:grid-cols-1">
+            <div class="space-y-1">
+                <div class="pb-3 max-w-96">
+                    <img class="max-w-36" src="assets/images/logo/speak2connect-logo-512px.webp" alt="">
+                    <p class="text-xs text-white ">Here at Speak2Connect, we provide personalized services to our clients with cost-effective marketing solutions.</p>
+                </div>
+                <span class="font-bold text-gold-600">Follow us</span>
+                <ul class="list-none flex gap-6 *:text-white">
+                    <li class="group block"><span class=""><i class="fa fa-facebook group-hover:text-blue-600 text-2xl duration-500"></i></span></li>
+                    <li class="group block"><span class=""><i class="fa fa-twitter group-hover:text-cyan-600 text-2xl duration-500"></i></span></li>
+                    <li class="group block"><span class=""><i class="fa fa-instagram group-hover:text-red-600 text-2xl duration-500"></i></span></li>
+                </ul>
+            </div>
+            <div class="xs:pt-12">
+                <span class="font-montserrat font-bold text-gold-600">Useful Links</span>
+                <div class="grid xs:grid-cols-1 sm-md:grid-cols-1 lg:grid-cols-2 pt-8 xs:pt-1">
+                    <div>
+                        <ul class="text-double-spanish-white-100">
+                            <li><a href="" class="hover:underline hover:text-yellow-metal-300 transition-all duration-100">Home</a></li>
+                            <li><a href="" class="hover:underline hover:text-sky-400 transition-all duration-100">Services</a></li>
+                            <li><a href="" class="hover:underline hover:text-sky-400 transition-all duration-100">Work</a></li>
+                            <li><a href="" class="hover:underline hover:text-sky-400 transition-all duration-100">About</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="text-double-spanish-white-100">
+                            <li><a href="" class="hover:underline hover:text-sky-400 transition-all duration-100">Reviews</a></li>
+                            <li><a href="" class="hover:underline hover:text-sky-400 transition-all duration-100">Contact</a></li>
+                            <li><a href="" class="hover:underline hover:text-sky-400 transition-all duration-100">Privacy Policy</a></li>
+                            <li><a href="" class="hover:underline hover:text-sky-400 transition-all duration-100">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="xs:pt-12">
+                <span class="font-montserrat font-bold text-gold-600">Subscribe</span>
+                <div class="pt-8 xs:pt-1">
+                    <span class="text-xs text-gold-500">Don't miss subscribing to our new feeds, kindly fill the form below.</span>
+                    <div>
+                        <label for="hs-trailing-button-add-on-with-leading-and-trailing" class="sr-only">Label</label>
+                        <div class="flex rounded-lg shadow-sm">
+                            <span class="px-4 inline-flex items-center min-w-fit rounded-s-md border border-e-0 border-gray-200 bg-gray-50 text-sm dark:bg-yellow-metal-800 dark:border-yellow-metal-500">
+                                <span class="text-sm text-gray-500 dark:text-yellow-metal-500"><i class="fa fa-envelope"></i></span>
+                            </span>
+                            <input type="text" id="hs-trailing-button-add-on-with-leading-and-trailing" name="hs-trailing-button-add-on-with-leading-and-trailing" class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-0 text-sm focus:z-10 focus:border-0 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-100 dark:border-gray-700 dark:text-gray-800 dark:focus:ring-gray-600 dark:placeholder-yellow-metal-700 outline-0" placeholder="sample@email.com">
+                            <button type="button" class="w-[2.875rem] h-[2.875rem] flex-shrink-0 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-e-md border border-transparent bg-yellow-metal-500 text-white hover:bg-yellow-metal-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                                <i class="fa fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/fe6c44cf74.js" crossorigin="anonymous"></script>
+<script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="assets/js/navbar-effects.js"></script>
+<script src="assets/js/activelink.js"></script>
+<script src="assets/js/carousel-autoscroll.js"></script>
+<script src="assets/js/stats-counter.js"></script>
+<script src="assets/js/darkMode.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

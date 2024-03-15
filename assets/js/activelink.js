@@ -1,9 +1,9 @@
 // JavaScript to add "active" class to the menu item with a matching href
 document.addEventListener('DOMContentLoaded', function () {
-    var currentLocation = window.location.href;
+    const currentLocation = window.location.href;
 
     // Get all anchor elements in the menu
-    var menuItems = document.querySelectorAll('.menu-list a');
+    const menuItems = document.querySelectorAll('.menu-list a');
 
     // Loop through the menu items
     menuItems.forEach(function (menuItem) {
