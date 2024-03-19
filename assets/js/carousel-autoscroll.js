@@ -27,7 +27,7 @@ setInterval(goNext, transitionInterval);*/
 let defaultTransform = 0;
 let touchStartX = 0;
 let touchMoveX = 0;
-const transitionInterval = 2500; // Set the interval in milliseconds (e.g., 2000 for 2 seconds)
+const transitionInterval = 5000; // Set the interval in milliseconds (e.g., 2000 for 2 seconds)
 
 function goNext() {
     defaultTransform = defaultTransform - 398;
