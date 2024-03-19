@@ -1,3 +1,9 @@
 test.php
 index.php
+index-old.html
 documentation.html
+assets/vendor/
+assets/server/
+assets/templates/
+assets/composer.json
+assets/composer.lock

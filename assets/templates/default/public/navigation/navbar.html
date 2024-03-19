@@ -1,0 +1,49 @@
+<nav id="{{navid}}" class="min-h-24 flex items-center justify-center transition-all duration-700">
+    <div class="navbar xs:w-full sm:container m-auto">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden hover:bg-gold-500 focus:bg-gold-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box min-w-52">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./reviews.html">Testimonial</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li class="hidden">
+                        <a>Parent</a>
+                        <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div><img src="assets/images/logo/speak2connect-logo-512px.webp" class="w-16 bg-black rounded-full" alt=""></div>
+            <a href="#!" id="site_name" class="text-xl xs:hidden pb-2 px-4 bg-left-bottom xs:text-flushMahogany-100 bg-gradient-to-r from-secondary to-gold-600 bg-[length:0%_2px] bg-no-repeat transition-all duration-500 ease-out text-secondary dark:text-white">Speak2Connect</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-secondary dark:text-gray-100">
+                <li class="menu-list text-underscore-effect duration-300"><a href="#">Home</a></li>
+                <li class="menu-list text-underscore-effect duration-300"><a href="./services">Services</a></li>
+                <li class="menu-list text-underscore-effect duration-300"><a href="./reviews.html">Testimonials</a></li>
+                <li class="menu-list text-underscore-effect duration-300"><a href="./about.html">About</a></li>
+                <li class="hidden">
+                    <details>
+                        <summary>Parent</summary>
+                        <ul class="p-2 w-max">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="menu-list text-underscore-effect duration-300"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a id="navbar-button" href="#!" class="xs:p-4 px-8 py-4 border border-b-2 border-gold-500 dark:border-white hover:border-none hover:bg-gold-400 transition duration-500 ease-in-out text-gold-500 dark:text-white hover:text-secondary dark:hover:bg-secondary hover:shadow-sm hover:shadow-white">Talk to us</a>
+
+        </div>
+    </div>
+</nav>

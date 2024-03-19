@@ -72,9 +72,9 @@
         }
     </script>
 </head>
-<body class="antialiased overflow-x-hidden bg-yellow-metal-500 dark:bg-black">
+<body class="xs:w-screen xs:overflow-x-hidden overflow-x-clip bg-primary dark:bg-shark-950 transition duration-500 antialiased">
 
-<button id="theme-toggle" type="button" class="fixed bottom-12 right-12 z-40 group flex h-16 w-16 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-white dark:before:bg-gray-800 dark:before:border-gray-700 before:border before:border-gray-300 before:transition before:duration-300 disabled:before:bg-gray-300 disabled:before:scale-100 ml-5">
+<button id="theme-toggle" type="button" class="fixed sm:bottom-12 sm:right-12 bottom-4 right-4 z-40 group flex h-16 w-16 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-white dark:before:bg-gray-800 dark:before:border-gray-700 before:border before:border-gray-300 before:transition before:duration-300 disabled:before:bg-gray-300 disabled:before:scale-100 ml-5">
     <svg id="theme-toggle-light-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
          class="relative w-8 h-8 text-yellow-500 duration-300 group-hover:rotate-180 group-hover:scale-150 hidden">
         <path
@@ -91,7 +91,7 @@
 <section id="about" class="min-h-screen z-10 pb-96 fixed">
     <div class="w-full">
         <div class="top-0 left-0">
-            <h2 class="xs:text-[12rem] sm-md:text-[25rem] lg:text-[25rem] 2xl:text-[30rem] text-transparent text-outline-size-1 text-outline-asphalt-950 dark:text-outline-customPink-100 absolute opacity-20 xl-only:-ml-28">Services</h2>
+            <h2 class="xs:text-[15rem] sm-md:text-[25rem] lg:text-[25rem] 2xl:text-[30rem] text-transparent text-outline-size-1 text-outline-asphalt-950 dark:text-outline-customPink-100 absolute opacity-20 xl-only:-ml-28">Services</h2>
         </div>
         <div class="flex justify-end xs:hidden">
             <img class="xs:w-9/12 sm:w-8/12 md:w-6/12 md:hidden w-6/12 h-auto xs:mt-24 sm-md:mt-48 lg:mt-72 2xl:mt-80" src="assets/images/startup-594090_1920.jpg" alt="">
@@ -99,20 +99,20 @@
     </div>
 </section>
 
-<header class="bg-gradient-to-b from-black to-gold-500">
+<header class="max-w-screen-sm">
     <section class="fixed w-full z-50">
         <nav id="navigation" class="min-h-24 flex items-center justify-center transition-all duration-700">
             <div class="navbar xs:w-full sm:container m-auto">
                 <div class="navbar-start">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden hover:bg-gold-500 focus:bg-gold-500">
+                        <div tabindex="0" role="button" class="dark:bg-white btn btn-ghost lg:hidden hover:bg-flushMahogany-500 focus:bg-flushMahogany-500">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box min-w-52">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="./services.html">Services</a></li>
-                            <li><a href="./reviews.html">Testimonial</a></li>
-                            <li><a href="./about.html">About</a></li>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box min-w-52">
+                            <li><a class="text-flushMahogany-700" href="#">Home</a></li>
+                            <li><a class="text-flushMahogany-700" href="./services.html">Services</a></li>
+                            <li><a class="text-flushMahogany-700" href="./reviews.html">Testimonial</a></li>
+                            <li><a class="text-flushMahogany-700" href="./about.html">About</a></li>
                             <li class="hidden">
                                 <a>Parent</a>
                                 <ul class="p-2">
@@ -120,11 +120,11 @@
                                     <li><a>Submenu 2</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a class="text-flushMahogany-700" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <div><img src="assets/images/logo/speak2connect-logo-512px.webp" class="w-16 bg-black rounded-full" alt=""></div>
-                    <a href="#!" id="site_name" class="text-xl xs:hidden pb-2 px-4 bg-left-bottom xs:text-flushMahogany-100 bg-gradient-to-r from-secondary to-gold-600 bg-[length:0%_2px] bg-no-repeat transition-all duration-500 ease-out text-secondary dark:text-white">Speak2Connect</a>
+                    <a href="#!" id="site_name" class="text-xl xs:hidden pb-2 px-4 bg-left-bottom xs:text-flushMahogany-100 bg-gradient-to-r from-secondary dark:bg-gradient-to-l to-black dark:from-customPink-500 dark:to-customPink-700 bg-[length:0%_2px] bg-no-repeat transition-all duration-500 ease-out text-secondary dark:text-white">Speak2Connect</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-secondary dark:text-gray-100">
@@ -145,7 +145,7 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a id="navbar-button" href="#!" class="xs:p-4 px-8 py-4 border border-b-2 border-gold-500 dark:border-white hover:border-none hover:bg-gold-400 transition duration-500 ease-in-out text-gold-500 dark:text-white hover:text-secondary dark:hover:bg-secondary hover:shadow-sm hover:shadow-white">Talk to us</a>
+                    <a id="navbar-button" href="#!" class="xs:p-4 px-8 py-4 border border-b-2 border-flushMahogany-500 dark:border-white hover:border-none hover:bg-flushMahogany-400 transition duration-500 ease-in-out text-flushMahogany-500 dark:text-white hover:text-secondary dark:hover:bg-secondary hover:shadow-sm hover:shadow-white">Talk to us</a>
 
                 </div>
             </div>
@@ -158,15 +158,15 @@
         <div class="max-w-fit xs:max-w-full sm:max-w-max">
             <div class="xl-only:px-3 mb-12 sm:container mx-auto">
                 <div class="text-left xs:pb-1 lg:pb-2 pb-8 flex">
-                    <h1 class="xs:text-3xl text-3xl lg:text-2xl text-double-spanish-white-200 dark:text-primary">Services</h1>
+                    <h1 class="xs:text-2xl text-3xl lg:text-2xl text-flushMahogany-700 dark:text-primary">Services</h1>
                 </div>
-                <h2 class="xs:text-6xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-secondary dark:text-gold-500 xs:leading-normal md:leading-snug intro">What we do</h2>
+                <h2 class="xs:text-6xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-secondary dark:text-flushMahogany-700 xs:leading-normal md:leading-snug intro">What we do</h2>
             </div>
             <div class="container mx-auto grid grid-cols-3 xs:grid-cols-1 w-screen gap-4">
                 <div class="card">
                     <figure class="w-full max-h-[19rem] overflow-hidden rounded-t-xl"><img src="assets/images/rocket-7611955_1920.png" alt="Shoes" /></figure>
-                    <div class="card-body text-black dark:text-gold-500 bg-white rounded-b-xl dark:bg-transparent dark:border dark:border-t-0 dark:border-gold-500">
-                        <h2 class="card-title underline underline-offset-4">
+                    <div class="card-body text-black bg-white rounded-b-xl">
+                        <h2 class="card-title underline underline-offset-4 xl:text-3xl text-flushMahogany-700">
                             Content & Copy Writing
                         </h2>
                         <p>Elevate your brand with compelling content and captivating copy writing services! Our team of skilled writers crafts engaging and SEO-optimized content that resonates with your audience. From website copy to blog posts, we tailor our writing to enhance your brand's voice and boost online visibility. Drive traffic, build credibility, and convert leads with our expertly crafted content solutions. Ignite your online presence and stand out in the digital landscape – choose our content and copywriting services for a powerful and persuasive brand narrative.</p>
@@ -175,8 +175,8 @@
 
                 <div class="card">
                     <figure class="w-full max-h-[19rem] overflow-hidden rounded-t-xl"><img src="assets/images/lead-generation-7733168_1920.png" alt="Shoes" /></figure>
-                    <div class="card-body text-black dark:text-gold-500 bg-white rounded-b-xl dark:bg-transparent dark:border dark:border-t-0 dark:border-gold-500">
-                        <h2 class="card-title underline underline-offset-4">
+                    <div class="card-body text-black bg-white rounded-b-xl">
+                        <h2 class="card-title underline underline-offset-4 xl:text-3xl text-flushMahogany-700">
                             Lead Generation & Telemarketing
                         </h2>
                         <p>Supercharge your business growth with our expert lead generation and telemarketing services! Unlock a steady stream of qualified leads through strategic outreach and personalized communication. Our dedicated team leverages cutting-edge techniques to connect you with potential customers, driving increased sales and revenue. Maximize your outreach efforts and enhance your market presence with our tailored lead generation and telemarketing solutions. Elevate your business to new heights – start generating leads that convert today!</p>
@@ -185,8 +185,8 @@
 
                 <div class="card">
                     <figure class="w-full max-h-[19rem] overflow-hidden rounded-t-xl"><img src="assets/images/robot-7912209_1920.png" alt="Shoes" /></figure>
-                    <div class="card-body text-black dark:text-gold-500 bg-white rounded-b-xl dark:bg-transparent dark:border dark:border-t-0 dark:border-gold-500">
-                        <h2 class="card-title underline underline-offset-4">
+                    <div class="card-body text-black bg-white rounded-b-xl">
+                        <h2 class="card-title underline underline-offset-4 xl:text-3xl text-flushMahogany-700">
                             Personal/Virtual Assistance
                         </h2>
                         <p>Experience unparalleled support with our personalized virtual assistance services! Our dedicated virtual assistants are equipped to streamline your tasks, manage schedules, and handle administrative duties with efficiency. Whether you need assistance with email management, travel arrangements, or data entry, our virtual support team is here to enhance your productivity. Elevate your focus on what matters most – let our virtual assistants empower your professional and personal life.</p>
@@ -196,8 +196,8 @@
             <div class="grid grid-cols-3 xs:grid-cols-1 container mx-auto w-full xs:mt-4 2xl:mt-4 xs:gap-y-4">
                 <div class="card">
                     <figure class="w-full max-h-[19rem] overflow-hidden rounded-t-xl"><img src="assets/images/lead-generation-7733168_1920.png" alt="Shoes" /></figure>
-                    <div class="card-body text-black dark:text-gold-500 bg-white rounded-b-xl dark:bg-transparent dark:border dark:border-t-0 dark:border-gold-500">
-                        <h2 class="card-title underline underline-offset-4">
+                    <div class="card-body text-black bg-white rounded-b-xl">
+                        <h2 class="card-title underline underline-offset-4 xl:text-3xl text-flushMahogany-700">
                             Customer Service
                         </h2>
                         <p>Deliver exceptional customer experiences with our top-tier customer service solutions! Our skilled team is committed to ensuring customer satisfaction and loyalty through prompt and personalized support. From resolving inquiries to addressing concerns, we prioritize delivering excellence at every touchpoint. Elevate your brand reputation by partnering with us for customer services that go beyond expectations. Strengthen your customer relationships and drive business success with our dedicated customer service team.</p>
@@ -206,8 +206,8 @@
                 <div></div>
                 <div class="card shadow-xl">
                     <figure class="w-full max-h-[19rem] overflow-hidden rounded-t-xl"><img src="assets/images/undraw_Website_builder_re_ii6e.png" alt="Shoes" /></figure>
-                    <div class="card-body text-black dark:text-gold-500 bg-white rounded-b-xl dark:bg-transparent dark:border dark:border-t-0 dark:border-gold-500">
-                        <h2 class="card-title underline underline-offset-4">
+                    <div class="card-body text-black bg-white rounded-b-xl">
+                        <h2 class="card-title underline underline-offset-4 xl:text-3xl text-flushMahogany-700">
                             Website Designs and Development
                         </h2>
                         <p>Transform your online presence with our cutting-edge web and mobile design services! Our expert designers blend creativity with functionality to craft visually stunning and user-friendly websites and mobile applications. From intuitive navigation to responsive layouts, we prioritize delivering a seamless user experience. Whether you're launching a new site or revamping an existing one, our design team is dedicated to creating a digital space that captivates your audience. Elevate your brand with our innovative web and mobile design solutions – where aesthetics meet functionality for unparalleled digital success.</p>
@@ -218,19 +218,19 @@
     </div>
 </section>
 
-<section class="min-h-[50vh] m-auto py-24 bg-asphalt-900 dark:bg-yellow-metal-500 relative z-10">
+<section class="min-h-[50vh] m-auto py-24 bg-silver-700 dark:bg-gray-950 relative z-10">
     <div class="max-w-screen-xl mx-auto px-6 md:px-8 lg:px-12 pt-6 lg:pt-12 pb-6 lg:pb-12">
-        <div class="bg-gold-600 dark:bg-black py-8 lg:py-12 px-6 relative text-center">
-            <h5 class="text-2xl sm:text-3xl lg:text-6xl text-white dark:text-primary mb-4">
+        <div class="bg-customPink-700 dark:bg-customPink-500 py-8 lg:py-12 px-6 relative text-center">
+            <h5 class="text-2xl xs:text-5xl sm:text-3xl lg:text-6xl text-white dark:text-primary mb-4">
                 Elevate your business with top-notch services!
             </h5>
             <p class="prose lg:prose-lg xl:prose-2xl mx-auto text-gray-200">Help us help you grow.</p>
-            <div class="h-12 w-12 bg-gold-600 dark:bg-black left-1/2 -ml-6 -bottom-6 absolute transform rotate-45">&nbsp;</div>
+            <div class="h-12 w-12 bg-customPink-700 dark:bg-customPink-500 left-1/2 -ml-6 -bottom-6 absolute transform rotate-45">&nbsp;</div>
         </div>
         <div class="pt-12 lg:pt-16 text-center">
             <a href="#"
-               class="bg-none border border-gold-300 hover:border-gold-500 transition duration-500 ease-in-out text-gold-300 hover:text-gold-500 px-4 lg:px-8 py-4 inline-block font-bold rounded-none shadow-xl hover:bg-yellow-metal-700 hover:shadow-sm hover:shadow-white">Start Today!</a>
-            <p class="pt-4 text-gold-500 dark:text-gold-300">No credit card required, cancel anytime.</p>
+               class="bg-none border border-customPink-700 hover:border-customPink-500 transition duration-500 ease-in-out text-customPink-700 hover:text-customPink-300 px-4 lg:px-8 py-4 inline-block font-bold rounded-none shadow-xl hover:bg-customPink-700 hover:shadow-sm hover:shadow-white">Start Today!</a>
+            <p class="pt-4 text-customPink-950 dark:text-flushMahogany-300">No credit card required, cancel anytime.</p>
         </div>
     </div>
 </section>
@@ -276,7 +276,7 @@
             </div>
             <div class="xs:pt-12">
                 <span class="font-montserrat font-bold text-gold-600">Useful Links</span>
-                <div class="grid xs:grid-cols-1 sm-md:grid-cols-1 lg:grid-cols-2 pt-8 xs:pt-1">
+                <div class="grid xs:grid-cols-2 sm-md:grid-cols-1 lg:grid-cols-2 pt-8 xs:pt-1">
                     <div>
                         <ul class="text-double-spanish-white-100">
                             <li><a href="" class="hover:underline hover:text-yellow-metal-300 transition-all duration-100">Home</a></li>

@@ -72,9 +72,9 @@
         }
     </script>
 </head>
-<body class="antialiased overflow-x-hidden bg-yellow-metal-500 dark:bg-black">
+<body class="antialiased overflow-x-hidden bg-primary dark:bg-shark-950">
 
-<button id="theme-toggle" type="button" class="fixed bottom-12 right-12 z-40 group flex h-16 w-16 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-white dark:before:bg-gray-800 dark:before:border-gray-700 before:border before:border-gray-300 before:transition before:duration-300 disabled:before:bg-gray-300 disabled:before:scale-100 ml-5">
+<button id="theme-toggle" type="button" class="fixed sm:bottom-12 sm:right-12 bottom-4 right-4 z-40 group flex h-16 w-16 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-white dark:before:bg-gray-800 dark:before:border-gray-700 before:border before:border-gray-300 before:transition before:duration-300 disabled:before:bg-gray-300 disabled:before:scale-100 ml-5">
     <svg id="theme-toggle-light-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
          class="relative w-8 h-8 text-yellow-500 duration-300 group-hover:rotate-180 group-hover:scale-150 hidden">
         <path
@@ -96,20 +96,20 @@
     </div>
 </section>
 
-<header class="bg-gradient-to-b from-black to-gold-500">
+<header class="max-w-screen-sm">
     <section class="fixed w-full z-50">
         <nav id="navigation" class="min-h-24 flex items-center justify-center transition-all duration-700">
             <div class="navbar xs:w-full sm:container m-auto">
                 <div class="navbar-start">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden hover:bg-gold-500 focus:bg-gold-500">
+                        <div tabindex="0" role="button" class="dark:bg-white btn btn-ghost lg:hidden hover:bg-flushMahogany-500 focus:bg-flushMahogany-500">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box min-w-52">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="./services.html">Services</a></li>
-                            <li><a href="./reviews.html">Testimonial</a></li>
-                            <li><a href="./about.html">About</a></li>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box min-w-52">
+                            <li><a class="text-flushMahogany-700" href="#">Home</a></li>
+                            <li><a class="text-flushMahogany-700" href="./services.html">Services</a></li>
+                            <li><a class="text-flushMahogany-700" href="./reviews.html">Testimonial</a></li>
+                            <li><a class="text-flushMahogany-700" href="./about.html">About</a></li>
                             <li class="hidden">
                                 <a>Parent</a>
                                 <ul class="p-2">
@@ -117,11 +117,11 @@
                                     <li><a>Submenu 2</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a class="text-flushMahogany-700" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <div><img src="assets/images/logo/speak2connect-logo-512px.webp" class="w-16 bg-black rounded-full" alt=""></div>
-                    <a href="#!" id="site_name" class="text-xl xs:hidden pb-2 px-4 bg-left-bottom xs:text-flushMahogany-100 bg-gradient-to-r from-secondary to-gold-600 bg-[length:0%_2px] bg-no-repeat transition-all duration-500 ease-out text-secondary dark:text-white">Speak2Connect</a>
+                    <a href="#!" id="site_name" class="text-xl xs:hidden pb-2 px-4 bg-left-bottom xs:text-flushMahogany-100 bg-gradient-to-r from-secondary dark:bg-gradient-to-l to-black dark:from-customPink-500 dark:to-customPink-700 bg-[length:0%_2px] bg-no-repeat transition-all duration-500 ease-out text-secondary dark:text-white">Speak2Connect</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-secondary dark:text-gray-100">
@@ -142,7 +142,7 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a id="navbar-button" href="#!" class="xs:p-4 px-8 py-4 border border-b-2 border-gold-500 dark:border-white hover:border-none hover:bg-gold-400 transition duration-500 ease-in-out text-gold-500 dark:text-white hover:text-secondary dark:hover:bg-secondary hover:shadow-sm hover:shadow-white">Talk to us</a>
+                    <a id="navbar-button" href="#!" class="xs:p-4 px-8 py-4 border border-b-2 border-flushMahogany-500 dark:border-white hover:border-none hover:bg-flushMahogany-400 transition duration-500 ease-in-out text-flushMahogany-500 dark:text-white hover:text-secondary dark:hover:bg-secondary hover:shadow-sm hover:shadow-white">Talk to us</a>
 
                 </div>
             </div>
@@ -155,7 +155,7 @@
         <div class="max-w-screen xs:max-w-full sm:max-w-max">
             <div class="sm:container mx-auto xs:px-8">
                 <div class="text-left lg:pb-2 pb-8 xs:pb-4 flex">
-                    <h2 class="xs:text-xl text-3xl lg:text-2xl text-gold-500 dark:text-primary">
+                    <h2 class="xs:text-2xl text-3xl lg:text-2xl text-flushMahogany-700 dark:text-primary">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -164,7 +164,7 @@
                         <span class="text-black dark:text-white">Based on 305 ratings</span>
                     </h2>
                 </div>
-                <h1 class="xs:text-4xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-secondary dark:text-gold-500 xs:leading-normal md:leading-snug intro">4.8 Satisfaction Rate</h1>
+                <h1 class="xs:text-6xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-secondary dark:text-flushMahogany-700 xs:leading-normal md:leading-snug intro">4.8 Satisfaction Rate</h1>
             </div>
             <div class="relative sm:container mx-auto pt-12 z-20 xs:hidden">
                 <div class="flex items-center justify-center py-24 sm:py-8 px-4">
@@ -177,65 +177,65 @@
                         <div class="xs:w-screen w-auto mx-auto overflow-x-hidden overflow-y-hidden gap-6">
                             <div id="slider" class="h-auto flex xs:gap-4 lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-1.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-1.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto ">
-                                    <img src="assets/images/reviews/speak2connect-review-2.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-2.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
 
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-3.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-3.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-4.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-4.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-5.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-5.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-6.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-6.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-7.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-7.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-8.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-8.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-9.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-9.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-10.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-10.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-11.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-11.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-12.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-12.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-13.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-13.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-14.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-14.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-15.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-15.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-16.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-16.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-17.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-17.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-3.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-3.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-3.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-3.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="assets/images/reviews/speak2connect-review-3.webp" alt="black chair and white table" class="object-cover object-center w-auto lg:h-[350px]" />
+                                    <img src="assets/images/reviews/speak2connect-review-3.webp" alt="black chair and white table" class="object-cover object-center w-auto sm-md:h-[240px] lg:h-[350px]" />
                                 </div>
 
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto hidden">
@@ -282,15 +282,19 @@
     </div>
 </section>
 
-<section class="z-20 relative bg-primary dark:bg-black py-16">
-    <div class="container mx-auto items-center justify-center w-full">
-        <div class="max-w-[1080px]">
-            <div class="pb-8">
-                <h3 class="xs:text-2xl text-5xl xs:text-center text-secondary dark:text-gold-500 font-semibold">Speak2Connect values integrity and commitment.</h3>
-            </div>
-            <p class="xs:text-center text-black dark:text-primary">
-                We won't ask to believe in our words. Our clients' satisfaction since the year of our establishment is reason enough for us to continue our campaign in making a difference in the virtual world. Don't judge us on our success, but judge us on our failures ~ because there aren't many. We continue to bring the best services our clients' ask for.
-            </p>
+<section class="min-h-[50vh] m-auto py-24 bg-silver-700 dark:bg-gray-950 relative z-10">
+    <div class="max-w-screen-xl mx-auto px-6 md:px-8 lg:px-12 pt-6 lg:pt-12 pb-6 lg:pb-12">
+        <div class="bg-customPink-700 dark:bg-customPink-500 py-8 lg:py-12 px-6 relative text-center">
+            <h5 class="text-2xl xs:text-5xl sm:text-3xl lg:text-6xl text-white dark:text-primary mb-4">
+                Elevate your business with top-notch services!
+            </h5>
+            <p class="prose lg:prose-lg xl:prose-2xl mx-auto text-gray-200">Help us help you grow.</p>
+            <div class="h-12 w-12 bg-customPink-700 dark:bg-customPink-500 left-1/2 -ml-6 -bottom-6 absolute transform rotate-45">&nbsp;</div>
+        </div>
+        <div class="pt-12 lg:pt-16 text-center">
+            <a href="#"
+               class="bg-none border border-customPink-700 hover:border-customPink-500 transition duration-500 ease-in-out text-customPink-700 hover:text-customPink-300 px-4 lg:px-8 py-4 inline-block font-bold rounded-none shadow-xl hover:bg-customPink-700 hover:shadow-sm hover:shadow-white">Start Today!</a>
+            <p class="pt-4 text-customPink-950 dark:text-flushMahogany-300">No credit card required, cancel anytime.</p>
         </div>
     </div>
 </section>
@@ -353,7 +357,7 @@
             </div>
             <div class="xs:pt-12">
                 <span class="font-montserrat font-bold text-gold-600">Useful Links</span>
-                <div class="grid xs:grid-cols-1 sm-md:grid-cols-1 lg:grid-cols-2 pt-8 xs:pt-1">
+                <div class="grid xs:grid-cols-2 sm-md:grid-cols-1 lg:grid-cols-2 pt-8 xs:pt-1">
                     <div>
                         <ul class="text-double-spanish-white-100">
                             <li><a href="" class="hover:underline hover:text-yellow-metal-300 transition-all duration-100">Home</a></li>

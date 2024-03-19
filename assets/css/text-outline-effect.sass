@@ -1,6 +1,6 @@
 /*
   base transparency
-.text-transparent
+.text-transparent, :is(.dark .dark\:text-transparent)
   color: transparent
 /*
   outline sizes
@@ -8,9 +8,9 @@
   -webkit-text-stroke-width: 1px
 /*
   colors
-.text-outline-white
+.text-outline-white, :is(.dark .dark\:text-outline-white)
   -webkit-text-stroke-color: #fff
-.text-outline-black
+.text-outline-black, :is(.dark .dark\:text-outline-black)
   -webkit-text-stroke-color: #000
 
 /*
@@ -249,6 +249,18 @@
   xs - mobile phones
   devices with less than 320px width is not supported
 @media only screen and (min-width: 320px) and (max-width: 639px)
+  .xs\:text-transparent
+    color: transparent
+
+  .xs\:text-outline-size-1
+    -webkit-text-stroke-width: 1px
+  .xs\:text-outline-size-2
+    -webkit-text-stroke-width: 2px
+
+  .xs\:text-outline-white
+    -webkit-text-stroke-color: #fff
+  .xs\:text-outline-black
+    -webkit-text-stroke-color: #000
 
 /*
   sm - small screens

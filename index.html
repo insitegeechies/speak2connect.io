@@ -72,9 +72,9 @@
         }
     </script>
 </head>
-<body class="antialiased overflow-x-hidden bg-primary dark:bg-yellow-metal-500 transition duration-500">
+<body class="xs:w-screen xs:overflow-x-hidden antialiased overflow-x-clip bg-primary dark:bg-shark-950 transition duration-500">
 
-<button id="theme-toggle" type="button" class="fixed bottom-12 right-12 z-40 group flex h-16 w-16 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-white dark:before:bg-gray-800 dark:before:border-gray-700 before:border before:border-gray-300 before:transition before:duration-300 disabled:before:bg-gray-300 disabled:before:scale-100 ml-5">
+<button id="theme-toggle" type="button" class="fixed sm:bottom-12 sm:right-12 bottom-4 right-4 z-40 group flex h-16 w-16 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-white dark:before:bg-gray-800 dark:before:border-gray-700 before:border before:border-gray-300 before:transition before:duration-300 disabled:before:bg-gray-300 disabled:before:scale-100 ml-5">
     <svg id="theme-toggle-light-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
          class="relative w-8 h-8 text-yellow-500 duration-300 group-hover:rotate-180 group-hover:scale-150 hidden">
         <path
@@ -87,21 +87,20 @@
               clip-rule="evenodd" />
     </svg>
 </button>
-
-<header class="bg-gradient-to-b from-black to-gold-500">
+<header class="max-w-screen-sm">
     <section class="fixed w-full z-50">
         <nav id="navigation" class="min-h-24 flex items-center justify-center transition-all duration-700">
             <div class="navbar xs:w-full sm:container m-auto">
                 <div class="navbar-start">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden hover:bg-gold-500 focus:bg-gold-500">
+                        <div tabindex="0" role="button" class="dark:bg-white btn btn-ghost lg:hidden hover:bg-flushMahogany-500 focus:bg-flushMahogany-500">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box min-w-52">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="./services.html">Services</a></li>
-                            <li><a href="./reviews.html">Testimonial</a></li>
-                            <li><a href="./about.html">About</a></li>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box min-w-52">
+                            <li><a class="text-flushMahogany-700" href="#">Home</a></li>
+                            <li><a class="text-flushMahogany-700" href="./services.html">Services</a></li>
+                            <li><a class="text-flushMahogany-700" href="./reviews.html">Testimonial</a></li>
+                            <li><a class="text-flushMahogany-700" href="./about.html">About</a></li>
                             <li class="hidden">
                                 <a>Parent</a>
                                 <ul class="p-2">
@@ -109,11 +108,11 @@
                                     <li><a>Submenu 2</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a class="text-flushMahogany-700" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                    <div><img src="assets/images/logo/speak2connect-logo-512px.webp" class="w-16 bg-black rounded-full" alt=""></div>
-                    <a href="#!" id="site_name" class="text-xl xs:hidden pb-2 px-4 bg-left-bottom xs:text-flushMahogany-100 bg-gradient-to-r from-secondary to-gold-600 bg-[length:0%_2px] bg-no-repeat transition-all duration-500 ease-out text-secondary dark:text-white">Speak2Connect</a>
+                    <div><img src="assets/images/logo/speak2connect-logo-512px.webp" class="w-16 bg-black rounded-full " alt=""></div>
+                    <a href="#!" id="site_name" class="text-xl xs:hidden pb-2 px-4 bg-left-bottom xs:text-flushMahogany-100 bg-gradient-to-r from-secondary dark:bg-gradient-to-l to-black dark:from-customPink-500 dark:to-customPink-700 bg-[length:0%_2px] bg-no-repeat transition-all duration-500 ease-out text-secondary dark:text-white">Speak2Connect</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-secondary dark:text-gray-100">
@@ -134,7 +133,7 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a id="navbar-button" href="#!" class="xs:p-4 px-8 py-4 border border-b-2 border-gold-500 dark:border-white hover:border-none hover:bg-gold-400 transition duration-500 ease-in-out text-gold-500 dark:text-white hover:text-secondary dark:hover:bg-secondary hover:shadow-sm hover:shadow-white">Talk to us</a>
+                    <a id="navbar-button" href="#!" class="xs:p-4 px-8 py-4 border border-b-2 border-flushMahogany-500 dark:border-white hover:border-none hover:bg-flushMahogany-400 transition duration-500 ease-in-out text-flushMahogany-500 dark:text-white hover:text-secondary dark:hover:bg-secondary hover:shadow-sm hover:shadow-white">Talk to us</a>
 
                 </div>
             </div>
@@ -142,59 +141,64 @@
     </section>
 </header>
 
-<section class="z-20 relative bg-primary">
-    <div class="min-h-screen sm-md:min-h-screen lg-only:min-h-screen flex items-center justify-center w-full bg-primary dark:bg-black">
+<section class="z-20 relative xs:w-screen overflow-x-hidden">
+    <div class="xs:pt-32 min-h-screen sm-md:min-h-screen lg-only:min-h-screen flex items-center justify-center w-full bg-primary dark:bg-gray-950 xs:bg-[url('../images/call-center-7040784_1920.webp')] xs:dark:bg-[url('../images/call-center-7040784_1920-alt.webp')] xs:bg-center xs:bg-no-repeat xs:bg-contain">
         <div class="max-w-fit xs:w-full sm:max-w-max text-center">
-            <div class="px-10 xl-only:px-3 mb-12 sm:container mx-auto">
-                <div class="text-left lg:pb-2 pb-8 flex">
-                    <h1 class="xs:text-2xl text-3xl lg:text-2xl text-double-spanish-white-200 dark:text-primary">Welcome to Speak2Connect!</h1>
+            <div class="xs:px-4 px-10 xl-only:px-3 mb-12 sm:container mx-auto">
+                <div class="text-left lg:pb-2 xs:pb-4 pb-8 flex">
+                    <h1 class="xs:text-2xl text-3xl lg:text-2xl text-flushMahogany-700 dark:text-primary">Welcome to Speak2Connect!</h1>
                 </div>
-                <h2 class="xs:text-5xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-secondary dark:text-gold-500 underline sm:underline-offset-[1rem] xs:leading-normal md:leading-snug intro">Personalized services, with cost-effective marketing solutions.</h2>
+                <h2 class="xs:text-6xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-secondary dark:text-flushMahogany-700 underline sm:underline-offset-[1rem] xs:leading-normal md:leading-snug intro">Personalized services, with cost-effective marketing solutions.</h2>
             </div>
-            <div class="grid grid-cols-4 w-screen xs:grid-cols-1 sm-md:grid-cols-1 lg-only:w-screen lg-only:flex lg-only:flex-row lg-only:gap-4 xl-only:gap-0 2xl:gap-4 px-12">
-                <div class="flex flex-col md:order-2 xs:order-2 gap-y-4 xs:gap-24">
-                    <div class="md:order-2 xs:order-2 md:pt-24">
+            <!--<div class="grid grid-cols-4 w-screen xs:grid-cols-1 sm-md:grid-cols-1 lg-only:w-screen lg-only:flex lg-only:flex-row lg-only:gap-4 xl-only:gap-0 2xl:gap-4 px-12">-->
+            <div class="xs:grid xs:grid-cols-1 sm-only:grid-cols-2 w-screen grid grid-cols-4 md-lg:flex md-lg:flex-col gap-8 px-12 lg-only:pr-32">
+                <!--<div class="xs:grid xslg:flex lg:flex-col sm-md:grid sm-md:grid-cols-2 sm-only:mt-16 md:order-2 xs:order-2 gap-y-4 xs:gap-24">-->
+
+                <div class="xs:w-screen xs:mx-auto lg-only:max-w-[800px] grid grid-cols-2 sm-only:flex sm-only:flex-row sm-only:gap-80 xs:grid-cols-1 xs:gap-4 xl:flex xl:flex-col lg-only:justify-center lg-only:justify-items-center order-2 gap-y-8">
+                    <div class="md:pt-24">
                         <a href="services.html" class="group">
-                            <div class="absolute 2xl:max-w-96 max-w-72 border-4 bg-primary px-36 py-4 group-hover:px-24 group-hover:bg-transparent group-hover:border-l-gold-500 group-hover:border-t-gold-500 group-hover:border-b-gold-500 group-hover:border-r-transparent transition-all duration-500">
-                                <div class="flex min-h-12 justify-center items-center px-8">
-                                    <div class="absolute text-white group-hover:text-gold-500 uppercase -ml-12 2xl:ml-0">view our services</div>
-                                    <span class="border-4 border-gold-500 absolute p-10 flex justify-center items-center rotate-45 opacity-0 group-hover:opacity-100 group-hover:ml-72 duration-500"><i class="fa fa-chevron-right text-3xl text-gold-500 absolute -rotate-45"></i></span>
+                            <div class="xs:relative absolute xs:w-full 2xl:max-w-96 sm-only:max-w-44 max-w-72 border-4 border-flushMahogany-600 dark:bg-transparent bg-primary px-36 py-4 group-hover:px-24 group-hover:bg-transparent group-hover:border-l-flushMahogany-500 group-hover:border-t-flushMahogany-500 xs:group-hover:border-r-flushMahogany-500 group-hover:border-b-flushMahogany-500 group-hover:border-r-transparent transition-all duration-500">
+                                <div class="flex min-h-12 justify-center items-center xs:px-0 px-8">
+                                    <div class="absolute text-flushMahogany-600 group-hover:text-flushMahogany-500 uppercase xs:ml-0 -ml-12 2xl:ml-0 group-hover:text-xs transition-all duration-500 xs:text-center">view <br class="hidden sm-only:group-hover:block" />our services</div>
+                                    <span class="xs:hidden border-4 border-flushMahogany-500 absolute p-10 flex justify-center items-center rotate-45 opacity-0 group-hover:opacity-100 group-hover:ml-72 sm-only:group-hover:ml-44 duration-500"><i class="fa fa-chevron-right text-3xl text-flushMahogany-700 absolute -rotate-45"></i></span>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="md:order-2 xs:order-2 md:pt-24">
+                    <div class="md:pt-24">
                         <a href="https://www.upwork.com/services/consultation/marketing-krystal-jade-1588277187444277248" class="group" target="_blank">
-                            <div class="absolute 2xl:max-w-96 max-w-72 border-4 bg-primary px-36 py-4 group-hover:px-24 group-hover:bg-transparent group-hover:border-l-gold-500 group-hover:border-t-gold-500 group-hover:border-b-gold-500 group-hover:border-r-transparent transition-all duration-500">
-                                <div class="flex min-h-12 justify-center items-center px-8">
-                                    <div class="absolute text-white group-hover:text-gold-500 uppercase -ml-12 2xl:ml-0 group-hover:text-sm">Marketing Consultation</div>
-                                    <span class="border-4 border-gold-500 absolute p-10 flex justify-center items-center rotate-45 opacity-0 group-hover:opacity-100 group-hover:ml-72 duration-500"><i class="fa fa-chevron-right text-3xl text-gold-500 absolute -rotate-45"></i></span>
+                            <div class="xs:relative absolute xs:w-full 2xl:max-w-96 sm-only:max-w-44 max-w-72 border-4 border-flushMahogany-600 dark:bg-transparent bg-primary px-36 py-4 group-hover:px-24 group-hover:bg-transparent group-hover:border-l-flushMahogany-500 group-hover:border-t-flushMahogany-500 xs:group-hover:border-r-flushMahogany-500 group-hover:border-b-flushMahogany-500 group-hover:border-r-transparent transition-all duration-500">
+                                <div class="flex min-h-12 justify-center items-center xs:px-0 px-8">
+                                    <div class="absolute text-flushMahogany-600 group-hover:text-flushMahogany-500 uppercase xs:ml-0 -ml-12 2xl:ml-0 group-hover:text-xs transition-all duration-500">Marketing <br class="hidden sm-only:group-hover:block" /> Consultation</div>
+                                    <span class="xs:hidden border-4 border-flushMahogany-500 absolute p-10 flex justify-center items-center rotate-45 opacity-0 group-hover:opacity-100 group-hover:ml-72 sm-only:group-hover:ml-44 duration-500"><i class="fa fa-chevron-right text-3xl text-flushMahogany-700 absolute -rotate-45"></i></span>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-span-3 lg-only:px-0 lg-only:w-8/12 w-full md:order-1 xs:order-1 md:px-8 xl-only:px-3 xs:pb-16 xs:hidden">
+                <div class="col-span-3">
                     <div class="w-full px-4">
                         <div class="lg:ml-auto lg:text-right">
                             <div class="relative z-10 inline-block pt-11 lg:pt-0">
-                                <div class="grid grid-cols-2 xs:flex-none self-center lg-only:pt-12">
-                                    <img src="./assets/images/profiles/speak2connect-krystal-jade-n.webp" alt="" class="lg:ml-auto xs:rounded-tl-[3rem] sm-md:rounded-tl-[4rem] rounded-tl-[8rem] rounded-tr-xl rounded-bl-xl rounded-br-xl"/>
+                                <div class="grid grid-cols-2 xs:flex xs:flex-col self-center lg-only:pt-12">
+                                    <img src="./assets/images/profiles/speak2connect-krystal-jade-n.webp" alt="" class="lg:ml-auto xs:rounded-tl-[3rem] sm-md:rounded-tl-[4rem] rounded-tl-[8rem] rounded-tr-xl rounded-bl-xl rounded-br-xl xs:hidden"/>
                                     <div class="text-center">
-                                        <blockquote class="relative">
-                                            <svg class="absolute -top-6 -start-8 size-16 text-gray-100 dark:text-gray-700" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <blockquote class="relative xs:-mt-24">
+                                            <svg class="absolute -top-6 -start-8 size-16 text-flushMahogany-800 dark:text-gray-700" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                                 <path d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z" fill="currentColor"/>
                                             </svg>
 
                                             <div class="relative z-10">
-                                                <p class="text-xl lg-only:text-sm text-double-spanish-white-200 md:text-3xl md:leading-normal dark:text-primary"><em>
+                                                <!--<p class="text-lg md:text-md sm:text-md lg text-flushMahogany-500 md:text-3xl md:leading-normal dark:text-primary">-->
+                                                <p class="text-flushMahogany-500 dark:text-primary leading-normal 2xl:text-4xl xl:text-3xl md:text-2xl xs:text-xl">
+                                                    <em>
                                                     In the virtual sphere, the only limits that exist are those we impose upon ourselves. Let us shatter these boundaries and redefine what is possible.
-                                                </em><span class="block text-md font-eb-garamond italic font-semibold">Kristal Jade L. - Founder</span></p>
+                                                </em><span class="block text-md text-flushMahogany-600 font-eb-garamond italic font-semibold">Kristal Jade L. - Founder</span></p>
                                             </div>
                                         </blockquote>
                                     </div>
                                 </div>
-                                <span class="absolute -left-8 -bottom-8 z-[-1] lg-only:left-[10%]">
+                                <span class="absolute -left-8 -bottom-8 z-[-1] lg-only:left-[10%] xs:hidden">
                                         <svg width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="2.5" cy="2.5" r="2.5" fill="#e9dbbd" /><circle cx="2.5" cy="24.5" r="2.5" fill="#e9dbbd" /><circle cx="2.5" cy="46.5" r="2.5" fill="#e9dbbd" /><circle cx="2.5" cy="68.5" r="2.5" fill="#e9dbbd" /><circle cx="2.5" cy="90.5" r="2.5" fill="#e9dbbd" /><circle cx="24.5" cy="2.5" r="2.5" fill="#e9dbbd" /><circle cx="24.5" cy="24.5" r="2.5" fill="#e9dbbd" /><circle cx="24.5" cy="46.5" r="2.5" fill="#e9dbbd" /><circle cx="24.5" cy="68.5" r="2.5" fill="#e9dbbd" /><circle cx="24.5" cy="90.5" r="2.5" fill="#e9dbbd" /><circle cx="46.5" cy="2.5" r="2.5" fill="#e9dbbd" /><circle cx="46.5" cy="24.5" r="2.5" fill="#e9dbbd" /><circle cx="46.5" cy="46.5" r="2.5" fill="#e9dbbd" /><circle cx="46.5" cy="68.5" r="2.5" fill="#e9dbbd" /><circle cx="46.5" cy="90.5" r="2.5" fill="#e9dbbd" /><circle cx="68.5" cy="2.5" r="2.5" fill="#e9dbbd" /><circle cx="68.5" cy="24.5" r="2.5" fill="#e9dbbd" /><circle cx="68.5" cy="46.5" r="2.5" fill="#e9dbbd" /><circle cx="68.5" cy="68.5" r="2.5" fill="#e9dbbd" /><circle cx="68.5" cy="90.5" r="2.5" fill="#e9dbbd" /><circle cx="90.5" cy="2.5" r="2.5" fill="#e9dbbd" /><circle cx="90.5" cy="24.5" r="2.5" fill="#e9dbbd" /><circle cx="90.5" cy="46.5" r="2.5" fill="#e9dbbd" /><circle cx="90.5" cy="68.5" r="2.5" fill="#e9dbbd" /><circle cx="90.5" cy="90.5" r="2.5" fill="#e9dbbd" /></svg>
                                     </span>
@@ -207,30 +211,31 @@
     </div>
 </section>
 
-<section id="about" class="min-h-screen bg-primary dark:bg-black relative z-10 pb-96">
+<section id="about" class="xs:w-screen overflow-x-hidden min-h-screen bg-primary dark:bg-gray-950 relative z-10 pb-96">
     <div class="w-full">
         <div class="top-0 left-0">
-            <h2 class="xs:text-[9rem] sm-md:text-[25rem] lg:text-[25rem] 2xl:text-[30rem] text-transparent text-outline-size-1 text-outline-asphalt-950 dark:text-outline-customPink-100 absolute xs:opacity-75 opacity-20 xl-only:-ml-28">About</h2>
+            <h2 class="xs:text-[15rem] sm-md:text-[25rem] lg:text-[25rem] 2xl:text-[30rem] text-transparent text-outline-size-1 text-outline-asphalt-950 dark:text-outline-white absolute xs:opacity-10 opacity-20 xl-only:-ml-28">About</h2>
         </div>
-        <div class="flex justify-end">
-            <img class="xs:w-full sm:w-8/12 md:w-6/12 md:hidden w-6/12 h-auto xs:mt-24 sm-md:mt-48 lg:mt-72 2xl:mt-80 xs:z-20 xs:opacity-85" src="assets/images/startup-594090_1920.jpg" alt="">
+        <div class="relative flex justify-end xs:hidden">
+            <img class="xs:w-full block sm:w-8/12 md:w-6/12 w-6/12 h-auto xs:mt-24 sm-md:mt-48 lg:mt-72 2xl:mt-80 xs:z-20 opacity-65 rounded-tl-[3rem]" src="assets/images/startup-594090_1920.jpg" alt="">
+            <div class="absolute inset-0 bg-gray-950 opacity-60"></div>
         </div>
     </div>
 </section>
-<section class="-mt-[25vh] xs:-mt-[30rem] sm-md:-mt-[60rem] lg:-mt-[45rem] xl:-mt-[42rem] 2xl:-mt-[50rem] relative z-10 min-h-[75vh] md:px-5">
-    <div class="container mx-auto md:px-16">
-        <div class="xs:w-full sm-md:w-9/12 w-6/12 py-6 lg-only:w-full">
-            <div class="lg-only:flex lg-only:flex-row lg-only:w-full lg-only:gap-8">
+<section class="xs:w-screen overflow-x-hidden -mt-[25vh] xs:-mt-[45rem] sm-md:-mt-[60rem] lg:-mt-[45rem] xl:-mt-[42rem] 2xl:-mt-[50rem] relative z-10 min-h-[75vh] md:px-5 ">
+    <div class="xs:px-12 sm:container mx-auto md:px-16">
+        <div class="xs:w-full sm-md:w-9/12 w-6/12 py-6">
+            <div class="">
                 <h5 class="text-7xl xs:text-5xl lg-only:text-5xl text-secondary dark:text-gray-100">We are a Davao-based Virtual Assistance Agency, started in 2018.</h5>
                 <div class="spacer"></div>
-                <p class="text-xl text-double-spanish-white-200 dark:text-gray-100">We provide quality service as REVA (Real Estate Virtual Assistant)/Telemarketers, Appointment Setters, Cold Callers, Lead Generation, Telemarketing, Admin Work, Website and Web-based App Development, and Virtual Assistant.</p>
+                <p class="text-xl text-flushMahogany-500 dark:text-gray-100">We provide quality service as REVA (Real Estate Virtual Assistant)/Telemarketers, Appointment Setters, Cold Callers, Lead Generation, Telemarketing, Admin Work, Website and Web-based App Development, and Virtual Assistant.</p>
             </div>
-            <div class="pt-16">
-                <a href="about.html" class="group">
-                    <div class="absolute 2xl:max-w-96 max-w-72 border-4 bg-primary px-36 py-4 group-hover:px-24 group-hover:bg-transparent group-hover:border-l-gold-500 group-hover:border-t-gold-500 group-hover:border-b-gold-500 group-hover:border-r-transparent transition-all duration-500">
-                        <div class="flex min-h-12 justify-center items-center px-8">
-                            <div class="absolute text-white group-hover:text-gold-500 -ml-12 2xl:ml-0 uppercase">more about us</div>
-                            <span class="border-4 border-gold-500 absolute p-10 flex justify-center items-center rotate-45 opacity-0 group-hover:opacity-100 group-hover:ml-72 duration-500"><i class="fa fa-chevron-right text-3xl text-gold-500 absolute -rotate-45"></i></span>
+            <div class="xs:pt-6 md:pt-24">
+                <a href="about.html" class="group" target="_blank">
+                    <div class="xs:relative absolute xs:w-full 2xl:max-w-96 sm-only:max-w-44 max-w-72 border-4 border-flushMahogany-600 dark:bg-transparent bg-primary px-36 py-4 group-hover:px-24 group-hover:bg-transparent group-hover:border-l-flushMahogany-500 group-hover:border-t-flushMahogany-500 xs:group-hover:border-r-flushMahogany-500 group-hover:border-b-flushMahogany-500 group-hover:border-r-transparent transition-all duration-500">
+                        <div class="flex min-h-12 justify-center items-center xs:px-0 px-8">
+                            <div class="absolute text-flushMahogany-600 group-hover:text-flushMahogany-500 uppercase xs:ml-0 -ml-12 2xl:ml-0 group-hover:text-xs transition-all duration-500">more about us</div>
+                            <span class="xs:hidden border-4 border-flushMahogany-500 absolute p-10 flex justify-center items-center rotate-45 opacity-0 group-hover:opacity-100 group-hover:ml-72 sm-only:group-hover:ml-44 duration-500"><i class="fa fa-chevron-right text-3xl text-flushMahogany-700 absolute -rotate-45"></i></span>
                         </div>
                     </div>
                 </a>
@@ -241,33 +246,38 @@
 
 
 
-<section id="services" class="fixed w-auto min-h-screen top-0 left-[50%] -ml-[50%] z-0">
-    <div class="w-full">
+<section id="services" class="xs:w-screen xs:overflow-x-hidden xs:pt-48 fixed w-auto top-0 xs:left-0 xs:-ml-0 left-[50%] -ml-[50%] z-0">
+    <div class="xs:w-auto w-full">
         <div class="relative">
-            <h2 class="xs:text-[8rem] sm-md:text-[25rem] lg:text-[25rem] 2xl:text-[30rem] 2xl:pt-48 text-transparent text-outline-size-1 text-outline-asphalt-950 dark:text-outline-flushMahogany-100 opacity-20 xl-only:-ml-28 fixed translate-[-50%] sm-md:mt-72">Services</h2>
+            <h2 class="overflow-x-hidden xs:text-[15rem] sm-md:text-[25rem] lg:text-[25rem] 2xl:text-[30rem] 2xl:pt-48 text-transparent text-outline-size-1 text-outline-asphalt-950 dark:text-outline-white xl-only:-ml-28 fixed translate-[-50%] sm-md:mt-72">Services</h2>
         </div>
     </div>
 </section>
 
-<section class="container mx-auto min-h-screen z-20 grid justify-center items-center lg:px-16">
+<section class="xs:px-12 px-8 xl:container mx-auto min-h-screen z-20 grid justify-center items-center">
+    <div class="xs:w-auto w-full">
+        <div class="relative">
+            <h2 class="xs:left-0 xs:-ml-0 overflow-x-hidden xs:text-[20rem] sm-md:text-[25rem] lg:text-[25rem] 2xl:text-[30rem] 2xl:pt-48 text-transparent text-outline-size-1 text-outline-asphalt-950 dark:text-outline-flushMahogany-100 opacity-20 xl-only:-ml-28 fixed translate-[-50%] sm-md:mt-72">Services</h2>
+        </div>
+    </div>
     <div class="w-full py-36">
         <div class="relative">
-            <div class="grid xs:grid-cols-1 sm-md:grid-cols-1 lg-only:grid-cols-2 grid-cols-3 gap-3 container mx-auto">
-                <div class="sm-md:px-12 sm-md:pb-5 2xl:w-9/12">
+            <div class="grid xs:grid-cols-1 sm-only:grid-cols-1 md-only:grid-cols-3 lg-only:grid-cols-3 grid-cols-3 gap-3 sm:pt-32">
+                <div class="sm-md:px-12 sm-md:pb-5 2xl:w-9/12 xs:pb-12">
                     <div class="mx-auto">
-                        <div class="xs:w-full ">
-                            <h5 class="xs:text-5xl text-7xl text-secondary dark:text-gold-500">What we do</h5>
+                        <div class="xs:w-full sm:w-full">
+                            <h5 class="xs:text-5xl text-7xl text-secondary dark:text-flushMahogany-700 lg-only:absolute lg-only:z-10">What we do</h5>
                         </div>
                     </div>
                 </div>
-                <div class="grid xs:grid-cols-1 sm-md:grid-cols-1 sm-md:px-12 mx-auto grid-cols-2 gap-3 col-span-2">
-                    <div class="card w-auto bg-white/60 dark:bg-gold-500 dark:bg-opacity-60">
+                <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 sm-md:px-12 mx-auto grid-cols-2 gap-3 col-span-2">
+                    <div class="card w-auto bg-white/60 dark:bg-gray-50">
                         <figure class="border-8 border-gray-100"><img src="assets/images/lead-generation-7733168_1920.png" alt="Shoes" /></figure>
                         <div class="card-body mt-12 sm-md:mt-2">
-                            <h2 class="card-title text-2xl sm-md:text-4xl text-secondary dark:text-asphalt-950">Lead Generation & Telemarketing</h2>
-                            <p class="sm-md:text-xl text-asphalt-900 dark:text-asphalt-900">Supercharge your business growth with our expert lead generation and telemarketing services! Unlock a steady stream of qualified leads through strategic outreach and personalized communication. <span class="hidden xl:block">Our dedicated team leverages cutting-edge techniques to connect you with potential customers, driving increased sales and revenue. Maximize your outreach efforts and enhance your market presence with our tailored lead generation and telemarketing solutions. Elevate your business to new heights – start generating leads that convert today!</span></p>
+                            <h2 class="card-title text-2xl sm-only:text-2xl md-only:text-2xl lg:text-3xl text-secondary dark:text-flushMahogany-700">Lead Generation & Telemarketing</h2>
+                            <p class="sm-only:text-md md-only:text-sm text-asphalt-900 dark:text-asphalt-900">Supercharge your business growth with our expert lead generation and telemarketing services! Unlock a steady stream of qualified leads through strategic outreach and personalized communication. <span class="hidden xl:block">Our dedicated team leverages cutting-edge techniques to connect you with potential customers, driving increased sales and revenue. Maximize your outreach efforts and enhance your market presence with our tailored lead generation and telemarketing solutions. Elevate your business to new heights – start generating leads that convert today!</span></p>
                             <div class="card-actions">
-                                <a class="group button learn-more" style="--bgb:var(--asphalt-950)">
+                                <a class="group button learn-more" style="--bgb:var(--flush-mahogany-700)">
                                                 <span class="circle" aria-hidden="true">
                                                     <span class="icon arrow"></span>
                                                 </span>
@@ -276,13 +286,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card w-auto bg-white/60 dark:bg-gold-500 xs:hidden">
+                    <div class="card w-auto bg-white/60 dark:bg-gray-50 xs:hidden">
                         <figure class="border-8 border-gray-100"><img src="assets/images/rocket-7611955_1920.png" alt="Shoes" /></figure>
                         <div class="card-body mt-12 sm-md:mt-2">
-                            <h2 class="card-title text-2xl sm-md:text-4xl text-secondary dark:text-asphalt-950">Content &amp; Copy Writing</h2>
-                            <p class="sm-md:text-xl text-asphalt-900 dark:text-asphalt-900">Elevate your brand with compelling content and captivating copy writing services! Our team of skilled writers crafts engaging and SEO-optimized content that resonates with your audience. <span class="hidden xl:block">From website copy to blog posts, we tailor our writing to enhance your brand's voice and boost online visibility. Drive traffic, build credibility, and convert leads with our expertly crafted content solutions. Ignite your online presence and stand out in the digital landscape – choose our content and copywriting services for a powerful and persuasive brand narrative.</span></p>
+                            <h2 class="card-title text-2xl sm-only:text-2xl md-only:text-2xl lg:text-3xl text-secondary dark:text-flushMahogany-700">Content &amp; Copy Writing</h2>
+                            <p class="sm-only:text-md md-only:text-sm text-asphalt-900 dark:text-asphalt-900">Elevate your brand with compelling content and captivating copy writing services! Our team of skilled writers crafts engaging and SEO-optimized content that resonates with your audience. <span class="hidden xl:block">From website copy to blog posts, we tailor our writing to enhance your brand's voice and boost online visibility. Drive traffic, build credibility, and convert leads with our expertly crafted content solutions. Ignite your online presence and stand out in the digital landscape – choose our content and copywriting services for a powerful and persuasive brand narrative.</span></p>
                             <div class="card-actions">
-                                <a class="group button learn-more" style="--bgb:var(--asphalt-950)">
+                                <a class="group button learn-more" style="--bgb:var(--flush-mahogany-700)">
                                                 <span class="circle" aria-hidden="true">
                                                     <span class="icon arrow"></span>
                                                 </span>
@@ -293,14 +303,14 @@
                     </div>
                 </div>
             </div>
-            <div class="container mx-auto grid xs:grid-cols-1 sm-md:grid-cols-1 grid-cols-3 pt-16 gap-3 md-only:px-12">
-                <div class="card w-auto bg-white/60 dark:bg-gold-500">
+            <div class="xs:w-full xl:container mx-auto grid xs:grid-cols-1 sm-only:grid-cols-2 md-only:grid-cols-3 grid-cols-3 pt-16 sm-only:pt-8 gap-3">
+                <div class="card w-auto bg-white/60 dark:bg-gray-50">
                     <figure class="border-8 border-gray-100 h-96 w-auto px-6"><img src="assets/images/robot-7912209_1920.png" alt="Shoes" /></figure>
                     <div class="card-body mt-12 sm-md:mt-2">
-                        <h2 class="card-title text-2xl sm-md:text-4xl text-secondary dark:text-asphalt-950">Personal/Virtual Assistance</h2>
-                        <p class="sm-md:text-xl text-asphalt-900 dark:text-asphalt-900">Experience unparalleled support with our personalized virtual assistance services! Our dedicated virtual assistants are equipped to streamline your tasks, manage schedules, and handle administrative duties with efficiency. <span class="hidden xl:block">Whether you need assistance with email management, travel arrangements, or data entry, our virtual support team is here to enhance your productivity. Elevate your focus on what matters most – let our virtual assistants empower your professional and personal life.</span></p>
+                        <h2 class="card-title text-2xl sm-only:text-2xl md-only:text-2xl lg:text-3xl text-secondary dark:text-flushMahogany-700">Personal/Virtual Assistance</h2>
+                        <p class="sm-only:text-md md-only:text-sm text-asphalt-900 dark:text-asphalt-900">Experience unparalleled support with our personalized virtual assistance services! Our dedicated virtual assistants are equipped to streamline your tasks, manage schedules, and handle administrative duties with efficiency. <span class="hidden xl:block">Whether you need assistance with email management, travel arrangements, or data entry, our virtual support team is here to enhance your productivity. Elevate your focus on what matters most – let our virtual assistants empower your professional and personal life.</span></p>
                         <div class="card-actions">
-                            <a class="group bg-pink-500 button learn-more" style="--bgb:var(--asphalt-950)">
+                            <a class="group bg-pink-500 button learn-more" style="--bgb:var(--flush-mahogany-700)">
                                                 <span class="circle" aria-hidden="true">
                                                     <span class="icon arrow"></span>
                                                 </span>
@@ -309,13 +319,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-auto bg-white/60 dark:bg-gold-500 xs:hidden">
+                <div class="card w-auto bg-white/60 dark:bg-gray-50 xs:hidden">
                     <figure class="border-8 border-gray-100 h-96 w-auto px-6"><img src="assets/images/call-center-7040784_1920.png" alt="Shoes" /></figure>
                     <div class="card-body mt-12 sm-md:mt-2">
-                        <h2 class="card-title text-2xl sm-md:text-4xl text-secondary dark:text-asphalt-950">Customer Service</h2>
-                        <p class="sm-md:text-xl text-asphalt-900 dark:text-asphalt-900">Deliver exceptional customer experiences with our top-tier customer service solutions! Our skilled team is committed to ensuring customer satisfaction and loyalty through prompt and personalized support. <span class="hidden xl:block">From resolving inquiries to addressing concerns, we prioritize delivering excellence at every touchpoint. Elevate your brand reputation by partnering with us for customer services that go beyond expectations. Strengthen your customer relationships and drive business success with our dedicated customer service team.</span></p>
+                        <h2 class="card-title text-2xl sm-only:text-2xl md-only:text-2xl lg:text-3xl text-secondary dark:text-flushMahogany-700">Customer Service</h2>
+                        <p class="sm-only:text-md md-only:text-sm text-asphalt-900 dark:text-asphalt-900">Deliver exceptional customer experiences with our top-tier customer service solutions! Our skilled team is committed to ensuring customer satisfaction and loyalty through prompt and personalized support. <span class="hidden xl:block">From resolving inquiries to addressing concerns, we prioritize delivering excellence at every touchpoint. Elevate your brand reputation by partnering with us for customer services that go beyond expectations. Strengthen your customer relationships and drive business success with our dedicated customer service team.</span></p>
                         <div class="card-actions">
-                            <a class="group bg-pink-500 button learn-more" style="--bgb:var(--asphalt-950)">
+                            <a class="group bg-pink-500 button learn-more" style="--bgb:var(--flush-mahogany-700)">
                                                 <span class="circle" aria-hidden="true">
                                                     <span class="icon arrow"></span>
                                                 </span>
@@ -324,13 +334,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-auto bg-white/60 dark:bg-gold-500 xs:hidden">
+                <div class="card w-auto bg-white/60 dark:bg-gray-50 xs:hidden sm-only:hidden">
                     <figure class="border-8 border-gray-100 h-96 w-auto px-6"><img src="assets/images/development-4536630_1920.png" alt="Shoes" /></figure>
                     <div class="card-body mt-12 sm-md:mt-2">
-                        <h2 class="card-title text-2xl sm-md:text-4xl text-secondary dark:text-asphalt-950">Web &amp; Mobile Design</h2>
-                        <p class="sm-md:text-xl text-asphalt-900 dark:text-asphalt-900">Transform your online presence with our cutting-edge web and mobile design services! Our expert designers blend creativity with functionality to craft visually stunning and user-friendly websites and mobile applications. <span class="hidden xl:block">From intuitive navigation to responsive layouts, we prioritize delivering a seamless user experience. Whether you're launching a new site or revamping an existing one, our design team is dedicated to creating a digital space that captivates your audience. Elevate your brand with our innovative web and mobile design solutions – where aesthetics meet functionality for unparalleled digital success.</span></p>
+                        <h2 class="card-title text-2xl sm-only:text-2xl md-only:text-2xl lg:text-3xl text-secondary dark:text-flushMahogany-700">Web &amp; Mobile Design</h2>
+                        <p class="sm-only:text-md md-only:text-sm text-asphalt-900 dark:text-asphalt-900">Transform your online presence with our cutting-edge web and mobile design services! Our expert designers blend creativity with functionality to craft visually stunning and user-friendly websites and mobile applications. <span class="hidden xl:block">From intuitive navigation to responsive layouts, we prioritize delivering a seamless user experience. Whether you're launching a new site or revamping an existing one, our design team is dedicated to creating a digital space that captivates your audience. Elevate your brand with our innovative web and mobile design solutions – where aesthetics meet functionality for unparalleled digital success.</span></p>
                         <div class="card-actions">
-                            <a class="group bg-pink-500 button learn-more" style="--bgb:var(--asphalt-950)">
+                            <a class="group bg-pink-500 button learn-more" style="--bgb:var(--flush-mahogany-700)">
                                                 <span class="circle" aria-hidden="true">
                                                     <span class="icon arrow"></span>
                                                 </span>
@@ -340,14 +350,14 @@
                     </div>
                 </div>
                 <div class="pt-16 hidden xs:block">
-                    <a href="services.html" class="group">
-                        <div class="absolute 2xl:max-w-96 max-w-72 border-4 bg-primary px-36 py-4 group-hover:px-24 group-hover:bg-transparent group-hover:border-l-gold-500 group-hover:border-t-gold-500 group-hover:border-b-gold-500 group-hover:border-r-transparent transition-all duration-500">
-                            <div class="flex min-h-12 justify-center items-center px-8">
-                                <div class="absolute text-white group-hover:text-gold-500 -ml-12 2xl:ml-0 uppercase">more services</div>
-                                <span class="border-4 border-gold-500 absolute p-10 flex justify-center items-center rotate-45 opacity-0 group-hover:opacity-100 group-hover:ml-72 duration-500"><i class="fa fa-chevron-right text-3xl text-gold-500 absolute -rotate-45"></i></span>
+                        <a href="services.html" class="group" target="_blank">
+                            <div class="xs:relative absolute xs:w-full 2xl:max-w-96 sm-only:max-w-44 max-w-72 border-4 border-flushMahogany-600 dark:bg-transparent bg-primary px-36 py-4 group-hover:px-24 group-hover:bg-transparent group-hover:border-l-flushMahogany-500 group-hover:border-t-flushMahogany-500 xs:group-hover:border-r-flushMahogany-500 group-hover:border-b-flushMahogany-500 group-hover:border-r-transparent transition-all duration-500">
+                                <div class="flex min-h-12 justify-center items-center xs:px-0 px-8">
+                                    <div class="absolute text-flushMahogany-600 group-hover:text-flushMahogany-500 uppercase xs:ml-0 -ml-12 2xl:ml-0 group-hover:text-xs transition-all duration-500">More <br class="hidden sm-only:group-hover:block" /> Services</div>
+                                    <span class="xs:hidden border-4 border-flushMahogany-500 absolute p-10 flex justify-center items-center rotate-45 opacity-0 group-hover:opacity-100 group-hover:ml-72 sm-only:group-hover:ml-44 duration-500"><i class="fa fa-chevron-right text-3xl text-flushMahogany-700 absolute -rotate-45"></i></span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
                 </div>
             </div>
         </div>
@@ -355,36 +365,36 @@
     </div>
 </section>
 
-<section id="testimonials" class="min-h-screen relative bg-asphalt-900 dark:bg-black z-10 lg:px-16">
+<section id="testimonials" class="min-h-screen relative bg-silver-500 dark:bg-gray-900 lg:px-16">
     <div class="w-full">
         <div class="top-0 left-0">
-            <h2 class="xs:text-[8rem] sm-md:text-[25rem] lg:text-[25rem] 2xl:text-[30rem] text-transparent text-outline-size-1 text-outline-double-spanish-white-200 absolute opacity-20 xl-only:-ml-28">Testimonials</h2>
+            <h2 class="xs:w-screen overflow-x-hidden xs:text-[15rem] sm-md:text-[25rem] lg:text-[25rem] 2xl:text-[30rem] text-transparent text-outline-size-1 text-outline-asphalt-950 dark:text-outline-asphalt-50 absolute opacity-20 xl-only:-ml-28 z-0">Testimonials</h2>
         </div>
     </div>
-    <div class="container mx-auto pt-24">
+    <div class="xs:w-full sm:container mx-auto pt-24 xs:px-12">
         <div class="xs:w-full sm:w-9/12 md:w-full w-6/12 py-6">
-            <h5 class="xs:text-5xl text-7xl text-gray-100">Clients' Reviews</h5>
+            <h5 class="xs:text-5xl text-7xl text-flushMahogany-600">Clients' Reviews</h5>
             <div class="py-8 xs:py-4 xl-only:py-4 md:py-2"></div>
-            <a href="reviews.html" class="group">
-                <div class="absolute 2xl:max-w-96 max-w-72 border-4 bg-primary px-36 py-4 group-hover:px-24 group-hover:bg-transparent group-hover:border-l-gold-500 group-hover:border-t-gold-500 group-hover:border-b-gold-500 group-hover:border-r-transparent transition-all duration-500">
-                    <div class="flex min-h-12 justify-center items-center px-8">
-                        <div class="absolute text-white group-hover:text-gold-500 -ml-12 2xl:ml-0 uppercase"><span class="xs:hidden">more</span> testimonials</div>
-                        <span class="border-4 border-gold-500 absolute p-10 flex justify-center items-center rotate-45 opacity-0 group-hover:opacity-100 group-hover:ml-72 duration-500"><i class="fa fa-chevron-right text-3xl text-gold-500 absolute -rotate-45"></i></span>
+            <a href="reviews.html" class="group" target="_blank">
+                <div class="xs:relative absolute xs:w-full 2xl:max-w-96 sm-only:max-w-44 max-w-72 border-4 border-flushMahogany-600 dark:bg-transparent bg-primary px-36 py-4 group-hover:px-24 group-hover:bg-transparent group-hover:border-l-flushMahogany-500 group-hover:border-t-flushMahogany-500 xs:group-hover:border-r-flushMahogany-500 group-hover:border-b-flushMahogany-500 group-hover:border-r-transparent transition-all duration-500">
+                    <div class="flex min-h-12 justify-center items-center xs:px-0 px-8">
+                        <div class="absolute text-flushMahogany-600 group-hover:text-flushMahogany-500 uppercase xs:ml-0 -ml-12 2xl:ml-0 group-hover:text-xs transition-all duration-500">More <br class="hidden sm-only:group-hover:block" /> Testimonials</div>
+                        <span class="xs:hidden border-4 border-flushMahogany-500 absolute p-10 flex justify-center items-center rotate-45 opacity-0 group-hover:opacity-100 group-hover:ml-72 sm-only:group-hover:ml-44 duration-500"><i class="fa fa-chevron-right text-3xl text-flushMahogany-700 absolute -rotate-45"></i></span>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="col-span-2 xs:pt-24 sm-md:pt-24 lg:pt-32 xl:pt-24 xs:hidden">
+        <div class="col-span-2 sm-md:pt-24 lg:pt-32 xl:pt-24 xs:order-1 z-10">
             <ul class="list-none">
-                <li class="border-b-2 border-b-yellow-metal-500 pb-6">
-                    <ul class="flex flex-row gap-4 sm-md:flex-col">
+                <li class="border-b-2 border-b-flushMahogany-500 pb-6">
+                    <ul class="grid grid-cols-1 xl:flex xl:flex-row gap-4 sm-md:flex-col">
                         <li><img class="rounded-md" src="assets/images/reviews/landscape/speak2connect-review-1-alt.webp" alt=""></li>
                         <li><img class="rounded-md" src="assets/images/reviews/landscape/speak2connect-review-2-alt.webp" alt=""></li>
                     </ul>
                 </li>
 
-                <li class="pb-6 pt-4">
-                    <ul class="flex flex-row gap-4 sm-md:flex-col">
+                <li class="pb-6 pt-4 xs:hidden">
+                    <ul class="grid grid-cols-1 xl:flex xl:flex-row gap-4 sm-md:flex-col">
                         <li><img class="rounded-md" src="assets/images/reviews/landscape/speak2connect-review-3-alt.webp" alt=""></li>
                         <li><img class="rounded-md" src="assets/images/reviews/landscape/speak2connect-review-4-alt.webp" alt=""></li>
                     </ul>
@@ -392,10 +402,10 @@
             </ul>
         </div>
     </div>
-    <div class="xs:w-full xs:pt-24 sm:container mx-auto">
-        <h5 class="2xl:text-3xl xl:text-3xl lg-only:text-4xl md:text-3xl text-double-spanish-white-200 xs:px-12">Featured Clients</h5>
+    <div class="xs:w-full xs:pt-24 lg:mt-16 xl:container mx-auto px-12">
+        <h5 class="2xl:text-3xl xl:text-3xl lg-only:text-4xl md:text-3xl text-flushMahogany-600 xs:px-12">Featured Clients</h5>
         <div class="flex items-center justify-center xs:py-4 py-24 sm:py-8 px-4">
-            <div class="w-full relative flex items-center justify-center px-24">
+            <div class="w-full relative flex items-center justify-center xs:px-4 px-24">
                 <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
                     <svg class="dark:text-gray-100" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -416,7 +426,7 @@
                             </div>
                         </div>
                         <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                            <img src="assets/images/hako-san-logo.png" alt="black chair and white table" class="object-cover object-center h-24 w-auto" />
+                            <img src="assets/images/hako-san-logo.webp" alt="black chair and white table" class="object-cover object-center h-24 w-auto" />
                             <div class="absolute w-full h-full pt-28">
                                 <h6 class="font-raleway text-xs text-center text-gray-100 lg:leading-5 dark:text-flushMahogany-100 w-full">Hako San Cafe and Bar</h6>
                             </div>
@@ -446,29 +456,29 @@
             </div>
         </div>
     </div>
-    <div class="bg-asphalt-900 dark:bg-black pb-36 xs:pt-16 sm-md:pt-16">
+    <div class="bg-silver-500 dark:bg-gray-900 pb-36 xs:pt-16 sm-md:pt-16">
         <div id="counter-stats">
-            <div class="container mx-auto">
+            <div class="xs:w-full sm:container mx-auto">
                 <div class="grid grid-cols-4 md:grid-cols-2 xs:grid-cols-2 gap-6">
                     <div class="items-center text-center">
                         <i class="fa fa-hourglass-2 text-5xl text-gray-100" aria-hidden="false"></i>
-                        <h6 class="xs:text-3xl text-6xl font-montserrat pt-2 text-white"><span class="counting" data-count="39">0</span>K +</h6>
-                        <h5 class="pt-2 xs:text-sm text-2xl font-raleway text-gold-500">Project Hours and counting</h5>
+                        <h6 class="xs:text-3xl sm-only:text-3xl text-6xl font-montserrat pt-2 text-flushMahogany-600"><span class="counting" data-count="39">0</span>K +</h6>
+                        <h5 class="pt-2 xs:text-sm sm-only:text-sm text-2xl font-raleway text-flushMahogany-50">Project Hours and counting</h5>
                     </div>
                     <div class="items-center text-center">
                         <i class="fa fa-project-diagram text-5xl text-gray-100" aria-hidden="true"></i>
-                        <h6 class="xs:text-3xl text-6xl font-montserrat pt-2 text-white"><span class="counting" data-count="244">0</span></h6>
-                        <h5 class="pt-2 xs:text-sm text-2xl font-raleway text-gold-500">Successful Projects</h5>
+                        <h6 class="xs:text-3xl sm-only:text-3xl text-6xl font-montserrat pt-2 text-flushMahogany-600"><span class="counting" data-count="244">0</span></h6>
+                        <h5 class="pt-2 xs:text-sm sm-only:text-sm text-2xl font-raleway text-flushMahogany-50">Successful Projects</h5>
                     </div>
                     <div class="items-center text-center">
                         <i class="fa fa-star text-5xl text-gray-100" aria-hidden="true"></i>
-                        <h6 class="xs:text-3xl text-6xl font-montserrat pt-2 text-white"><span class="counting" data-count="240">0</span></h6>
-                        <h5 class="pt-2 xs:text-sm text-2xl font-raleway text-gold-500">5-Star Ratings</h5>
+                        <h6 class="xs:text-3xl sm-only:text-3xl text-6xl font-montserrat pt-2 text-flushMahogany-600"><span class="counting" data-count="240">0</span></h6>
+                        <h5 class="pt-2 xs:text-sm sm-only:text-sm text-2xl font-raleway text-flushMahogany-50">5-Star Ratings</h5>
                     </div>
                     <div class="items-center text-center">
                         <i class="fa fa-coffee text-5xl text-gray-100" aria-hidden="true"></i>
-                        <h6 class="xs:text-3xl text-6xl font-montserrat pt-2 text-white"><span class="counting" data-count="60">0</span>K+</h6>
-                        <h5 class="pt-2 xs:text-sm text-2xl font-raleway text-gold-500">Cups of Coffee (and counting)</h5>
+                        <h6 class="xs:text-3xl sm-only:text-3xl text-6xl font-montserrat pt-2 text-flushMahogany-600"><span class="counting" data-count="60">0</span>K+</h6>
+                        <h5 class="pt-2 xs:text-sm sm-only:text-sm text-2xl font-raleway text-flushMahogany-50">Cups of Coffee (and counting)</h5>
                     </div>
                 </div>
             </div>
@@ -476,76 +486,83 @@
     </div>
 </section>
 
-<section id="team" class="min-h-screen relative bg-asphalt-900 dark:bg-black z-10 pb-96">
+<section id="team" class="xs:w-screen overflow-x-hidden min-h-screen relative bg-silver-500 dark:bg-gray-900 z-10 pb-96">
     <div class="w-full">
         <div class="top-0 left-0">
-            <h2 class="xs:text-[8rem] sm-md:text-[18rem] lg:text-[20rem] 2xl:text-[30rem] text-transparent text-outline-size-1 text-outline-white opacity-20 xl-only:-ml-28">OurTeam</h2>
+            <h2 class="xs:text-[16rem] sm-md:text-[18rem] lg:text-[20rem] 2xl:text-[30rem] text-transparent text-outline-size-1 text-outline-white opacity-20 xl-only:-ml-28"><span class="xs:hidden">Our</span>Team</h2>
         </div>
     </div>
 </section>
-<section class="-mt-[25vh] xs:-mt-[45rem] sm-md:-mt-[60rem] lg-only:-mt-[55rem] xl-only:-mt-[50rem] relative z-10 min-h-[75vh] 2xl:-mt-[50rem] bg-gradient-to-t from-asphalt-900 via-asphalt-900 to-transparent dark:bg-gradient-to-t dark:from-black dark:via-black dark:to-transparent lg:px-16 md:pb-32">
-    <div class="container mx-auto">
+<section class="-mt-[25vh] xs:-mt-[55rem] sm-md:-mt-[60rem] lg-only:-mt-[55rem] xl-only:-mt-[50rem] relative z-10 min-h-[75vh] 2xl:-mt-[50rem] bg-gradient-to-t from-silver-500 via-silver-500 to-transparent dark:bg-gradient-to-t dark:from-gray-950 dark:via-gray-950 dark:to-transparent sm-only:px-12 lg:px-16 md:pb-32">
+    <div class="xs:w-full w-full xl:container mx-auto px-12 sm-only:px-0 ">
         <div class="col-span-1">
             <div class="xs:w-full w-6/12 sm:w-9/12 md:w-full py-6">
-                <h5 class="xs:text-5xl text-7xl text-gray-100">Meet Our Team</h5>
+                <h5 class="xs:text-5xl text-7xl text-flushMahogany-700">Meet Our Team</h5>
                 <div class="xs:py-4 2xl:py-8 xl:py-4 md:py-4"></div>
-                <a href="about.html#the-team" class="group">
-                    <div class="absolute 2xl:max-w-96 max-w-72 border-4 bg-primary px-36 py-4 group-hover:px-24 group-hover:bg-transparent group-hover:border-l-gold-500 group-hover:border-t-gold-500 group-hover:border-b-gold-500 group-hover:border-r-transparent transition-all duration-500">
-                        <div class="flex min-h-12 justify-center items-center px-8">
-                            <div class="absolute text-white group-hover:text-gold-500 -ml-12 2xl:ml-0 uppercase">meet the team</div>
-                            <span class="border-4 border-gold-500 absolute p-10 flex justify-center items-center rotate-45 opacity-0 group-hover:opacity-100 group-hover:ml-72 duration-500"><i class="fa fa-chevron-right text-3xl text-gold-500 absolute -rotate-45"></i></span>
+                <a href="about.html#the-team" class="group" target="_blank">
+                    <div class="xs:relative absolute xs:w-full 2xl:max-w-96 sm-only:max-w-44 max-w-72 border-4 border-flushMahogany-600 dark:bg-transparent bg-primary px-36 py-4 group-hover:px-24 group-hover:bg-transparent group-hover:border-l-flushMahogany-500 group-hover:border-t-flushMahogany-500 xs:group-hover:border-r-flushMahogany-500 group-hover:border-b-flushMahogany-500 group-hover:border-r-transparent transition-all duration-500">
+                        <div class="flex min-h-12 justify-center items-center xs:px-0 px-8">
+                            <div class="absolute text-flushMahogany-600 group-hover:text-flushMahogany-500 uppercase xs:ml-0 -ml-12 2xl:ml-0 group-hover:text-xs transition-all duration-500">Meet <br class="hidden sm-only:group-hover:block" /> the team</div>
+                            <span class="xs:hidden border-4 border-flushMahogany-500 absolute p-10 flex justify-center items-center rotate-45 opacity-0 group-hover:opacity-100 group-hover:ml-72 sm-only:group-hover:ml-44 duration-500"><i class="fa fa-chevron-right text-3xl text-flushMahogany-700 absolute -rotate-45"></i></span>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
 
-        <div class="grid grid-cols-3 xs:grid-cols-1 sm-md:grid-cols-2 md:mt-28 gap-8 col-span-2 flex-wrap xs:pt-24">
+        <div class="relative grid grid-cols-3 xs:grid-cols-1 sm-md:grid-cols-3 lg:mt-28 sm-only:gap-2 gap-8 col-span-2 flex-wrap xs:pt-8 sm-md:mt-24">
             <!-- component -->
-            <div class="max-w-sm shadow-lg rounded-lg overflow-hidden my-4">
-                <img class="w-full h-56 object-cover object-center bg-black" src="assets/images/profiles/speak2connect-aenesis-jireh-l.webp" alt="avatar">
-                <div class="flex items-center justify-center py-3 bg-gray-900">
-                    <h5 class="text-center text-white text-2xl tracking-[0.5rem] lg-only:text-sm">Co-Managing Partner</h5>
+            <div class="xs:max-w-full max-w-sm shadow-lg rounded-lg overflow-hidden my-4">
+                <img class="w-full h-56 object-cover object-center bg-black sm-md:hidden" src="assets/images/profiles/speak2connect-novy-mae-a.webp" alt="avatar">
+                <img class="w-full h-56 object-cover object-center bg-gold-600 hidden sm-md:block" src="assets/images/profiles/speak2connect-novy-mae-a-alt.webp" alt="avatar">
+                <div class="grid items-center justify-center text-center py-3 bg-gray-900">
+                    <h5 class="text-center text-white text-2xl tracking-[0.5rem] sm-only:text-sm">Nova Mae <span class="sm-lg:hidden">A.</span></h5>
+                    <span class="border-b border-flushMahogany-500 my-1"></span>
+                    <span class="block text-gray-200 font-raleway sm-only:text-xs text-lg">Manager</span>
                 </div>
                 <div class="py-4 px-6 bg-white">
-                    <h6 class="text-2xl font-semibold text-asphalt-950">Aenesis Jireh L.</h6>
-                    <p class="py-2 text-lg lg-only:text-sm text-asphalt-900">Full Stack maker & UI / UX Designer , love hip hop music, Author of Building UI and formulating UX.</p>
-                    <div class="flex items-center mt-4 text-gray-700 gap-6">
+                    <h6 class="text-2xl font-semibold text-asphalt-950 text-center hidden">Manager</h6>
+                    <p class="py-2 text-lg lg-only:text-sm text-asphalt-900 hidden">Experienced ISA/Appointment Setter/ Cold Caller. I am a go-getter, and problem solver.</p>
+                    <div class="flex items-center justify-center mt-4 text-gray-700 gap-2">
                         <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
                             <path d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"/>
                         </svg>
-                        <span class="text-xs">jireh@speak2connect</span>
+                        <span class="text-xs">nova@speak2connect.org</span>
                     </div>
                 </div>
             </div>
 
-
-
-            <div class="max-w-sm shadow-lg rounded-lg overflow-hidden my-4">
-                <img class="w-full h-56 object-cover object-center bg-black" src="assets/images/profiles/speak2connect-krystal-jade-n.webp" alt="avatar">
-                <div class="flex items-center justify-center py-3 bg-gray-900">
-                    <h5 class="text-center text-white text-2xl tracking-[0.5rem] lg-only:text-sm">Team Leader</h5>
+            <div class="xs:max-w-full max-w-sm shadow-lg rounded-lg overflow-hidden my-4">
+                <img class="w-full h-56 object-cover object-center bg-black sm-md:hidden" src="assets/images/profiles/speak2connect-aenesis-jireh-l.webp" alt="avatar">
+                <img class="w-full h-56 object-cover object-center bg-gold-600 sm-md:block hidden" src="assets/images/profiles/speak2connect-aenesis-jireh-l-alt.webp" alt="avatar">
+                <div class="grid items-center justify-center text-center py-3 bg-gray-900">
+                    <h5 class="text-center text-white text-2xl tracking-[0.5rem] sm-only:text-sm">Aenesis Jireh <span class="sm-lg:hidden">L.</span></h5>
+                    <span class="border-b border-flushMahogany-500 my-1"></span>
+                    <span class="block text-gray-200 font-raleway sm-only:text-xs text-lg">Co-Managing Partner</span>
                 </div>
                 <div class="py-4 px-6 bg-white">
-                    <h6 class="text-2xl font-semibold text-asphalt-950">Krystal Jade N.</h6>
-                    <p class="py-2 text-lg lg-only:text-sm text-asphalt-900">Experienced ISA/Appointment Setter/ Cold Caller. I am a go-getter, and problem solver.</p>
-                    <div class="flex items-center mt-4 text-gray-700 gap-6">
+                    <h6 class="text-2xl font-semibold text-asphalt-950 hidden">Aenesis Jireh L.</h6>
+                    <p class="py-2 text-lg lg-only:text-sm text-asphalt-900 hidden">Full Stack maker & UI / UX Designer , love hip hop music, Author of Building UI and formulating UX.</p>
+                    <div class="flex items-center justify-center mt-4 text-gray-700 gap-2">
                         <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
                             <path d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"/>
                         </svg>
-                        <span class="text-xs">krystal@speak2connect.com</span>
+                        <span class="text-xs">jireh@speak2connect.org</span>
                     </div>
                 </div>
             </div>
 
-            <div class="max-w-sm shadow-lg rounded-lg overflow-hidden my-4 sm-md:hidden">
-                <img class="w-full h-56 object-cover object-center bg-black" src="assets/images/profiles/speak2connect-jerfel-s.webp" alt="avatar">
-                <div class="flex items-center justify-center py-3 bg-gray-900">
-                    <h5 class="text-center text-white text-2xl tracking-[0.5rem] lg-only:text-sm">Admin</h5>
+            <div class="xs:max-w-full max-w-sm shadow-lg rounded-lg overflow-hidden my-4">
+                <img class="w-full h-56 object-cover object-center bg-black sm-md:hidden" src="assets/images/profiles/speak2connect-elaine-monica-n.webp" alt="avatar">
+                <img class="w-full h-56 object-cover object-center bg-gold-600 hidden sm-md:block" src="assets/images/profiles/speak2connect-elaine-monica-n-alt.webp" alt="avatar">
+                <div class="grid items-center justify-center text-center py-3 bg-gray-900">
+                    <h5 class="text-center text-white text-2xl tracking-[0.5rem] sm-only:text-sm leading-tight">Elaine Monica <span class="sm-lg:hidden">N.</span></h5>
+                    <span class="border-b border-flushMahogany-500 my-1"></span>
+                    <span class="block text-gray-200 font-raleway sm-only:text-xs text-lg">Manager</span>
                 </div>
                 <div class="py-4 px-6 bg-white rounded-b-lg">
-                    <h6 class="text-2xl font-semibold text-gray-800">Jerfel S.</h6>
-                    <p class="py-2 text-lg lg-only:text-sm text-gray-700">I'm a student with moderate Microsoft Office experience. I can offer my undivided attention to the tasks.</p>
+                    <h6 class="text-2xl font-semibold text-asphalt-950 hidden">Elaine Monica N.</h6>
+                    <p class="py-2 text-lg lg-only:text-sm text-gray-700 hidden">I'm a student with moderate Microsoft Office experience. I can offer my undivided attention to the tasks.</p>
                     <div class="flex items-center mt-4 text-gray-700 hidden">
                         <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
                             <path d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"/><g><path d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"/></g>
@@ -558,11 +575,11 @@
                         </svg>
                         <h1 class="px-2 text-sm">California</h1>
                     </div>
-                    <div class="flex items-center mt-4 text-gray-700 gap-6">
+                    <div class="flex items-center justify-center mt-4 text-gray-700 gap-2">
                         <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
                             <path d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"/>
                         </svg>
-                        <h1 class="px-2 text-sm">jerfel@example.com</h1>
+                        <p class="text-xs">elaine@speak2connect.org</p>
                     </div>
                 </div>
             </div>
@@ -572,19 +589,19 @@
     </div>
 </section>
 
-<section class="min-h-[50vh] m-auto py-24 bg-asphalt-900 dark:bg-yellow-metal-500 relative">
+<section class="min-h-[50vh] m-auto py-24 bg-silver-700 dark:bg-gray-950 relative z-10">
     <div class="max-w-screen-xl mx-auto px-6 md:px-8 lg:px-12 pt-6 lg:pt-12 pb-6 lg:pb-12">
-        <div class="bg-gold-600 dark:bg-black py-8 lg:py-12 px-6 relative text-center">
-            <h5 class="text-2xl sm:text-3xl lg:text-6xl text-white dark:text-primary mb-4">
+        <div class="bg-customPink-700 dark:bg-customPink-500 py-8 lg:py-12 px-6 relative text-center">
+            <h5 class="text-2xl xs:text-5xl sm:text-3xl lg:text-6xl text-white dark:text-primary mb-4">
                 Elevate your business with top-notch services!
             </h5>
             <p class="prose lg:prose-lg xl:prose-2xl mx-auto text-gray-200">Help us help you grow.</p>
-            <div class="h-12 w-12 bg-gold-600 dark:bg-black left-1/2 -ml-6 -bottom-6 absolute transform rotate-45">&nbsp;</div>
+            <div class="h-12 w-12 bg-customPink-700 dark:bg-customPink-500 left-1/2 -ml-6 -bottom-6 absolute transform rotate-45">&nbsp;</div>
         </div>
         <div class="pt-12 lg:pt-16 text-center">
             <a href="#"
-               class="bg-none border border-gold-300 hover:border-gold-500 transition duration-500 ease-in-out text-gold-300 hover:text-gold-500 px-4 lg:px-8 py-4 inline-block font-bold rounded-none shadow-xl hover:bg-yellow-metal-700 hover:shadow-sm hover:shadow-white">Start Today!</a>
-            <p class="pt-4 text-gold-500 dark:text-gold-300">No credit card required, cancel anytime.</p>
+               class="bg-none border border-customPink-700 hover:border-customPink-500 transition duration-500 ease-in-out text-customPink-700 hover:text-customPink-300 px-4 lg:px-8 py-4 inline-block font-bold rounded-none shadow-xl hover:bg-customPink-700 hover:shadow-sm hover:shadow-white">Start Today!</a>
+            <p class="pt-4 text-customPink-950 dark:text-flushMahogany-300">No credit card required, cancel anytime.</p>
         </div>
     </div>
 </section>
@@ -630,7 +647,7 @@
             </div>
             <div class="xs:pt-12">
                 <span class="font-montserrat font-bold text-gold-600">Useful Links</span>
-                <div class="grid xs:grid-cols-1 sm-md:grid-cols-1 lg:grid-cols-2 pt-8 xs:pt-1">
+                <div class="grid xs:grid-cols-2 sm-md:grid-cols-1 lg:grid-cols-2 pt-8 xs:pt-1">
                     <div>
                         <ul class="text-double-spanish-white-100">
                             <li><a href="" class="hover:underline hover:text-yellow-metal-300 transition-all duration-100">Home</a></li>
