@@ -5,8 +5,10 @@ documentation.html
 back-index.html
 back-contact.html
 back-services.html
+the-team.html
 assets/vendor/
 assets/server/
 assets/templates/
 assets/composer.json
 assets/composer.lock
+.htaccess
