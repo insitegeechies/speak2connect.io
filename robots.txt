@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /assets/json/
+Disallow: /assets/others/
+Disallow: /assets/pages/
+Disallow: /assets/server/
+Disallow: /assets/vendor/
+Disallow: /assets/*.json
+Disallow: /assets/*.lock
+Allow:/assets/images/
+Sitemap:https://speak-2-connect.com/sitemap.xml
