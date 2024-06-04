@@ -4702,6 +4702,10 @@ details.collapse summary::-webkit-details-marker {
   color: var(--yellow-metal-300);
 }
 
+.hover\:text-flushMahogany-800:hover {
+  color: rgba(144, 33, 47, 1);
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
