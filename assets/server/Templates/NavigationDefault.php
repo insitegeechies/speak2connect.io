@@ -5,43 +5,43 @@
         /**
          * @var mixed|null
          */
-        public mixed $navClass;
+        private mixed $navClass;
         /**
          * @var mixed|null
          */
-        public mixed $navClassMobile;
+        private mixed $navClassMobile;
         /**
          * @var mixed|null
          */
-        public mixed $navClassDropdown;
+        private mixed $navClassDropdown;
         /**
          * @var mixed|null
          */
-        public mixed $navImg;
+        private mixed $navImg;
         /**
          * @var mixed|null
          */
-        public mixed $navImgClass;
+        private mixed $navImgClass;
         /**
          * @var mixed|null
          */
-        public mixed $navSiteNameClass;
+        private mixed $navSiteNameClass;
         /**
          * @var mixed|null
          */
-        public mixed $navSiteName;
+        private mixed $navSiteName;
         /**
          * @var mixed|null
          */
-        public mixed $navULClass;
-        public array|string $navUL;
-        public string $navButton;
+        private mixed $navULClass;
+        private array|string $navUL;
+        private string $navButton;
         /**
          * @var mixed|null
          */
-        public mixed $navClassMobileButton;
-        public array $array;
-        public string $navULMobile;
+        private mixed $navClassMobileButton;
+        private array $array;
+        private string $navULMobile;
         
         public function __construct() {
             $this->navClass();
@@ -96,8 +96,9 @@
         {
             
             foreach($array as $item => $value) {
-                echo '<li class="'.$class.'"><a href="'.$value.'">'.$item.'</a></li>';
+                $result[] = '<li class="'.$class.'"><a href="'.$value.'">'.$item.'</a></li>';
             }
+            return $result;
         }
         public function navULMobile($array)
         {
@@ -138,10 +139,9 @@
             if(is_null($class)) {
                 $class = 'mt-3 z-[1] p-2 shadow bg-base-100';
             }
+            $navs = $this->navUL($array, $class);
             
-            
-            
-            $return = '<nav id="navigation" class="'.$this->navClass.'">
+            return '<nav id="navigation" class="'.$this->navClass.'">
     <div class="navbar xs:w-full sm:container m-auto">
         <div class="navbar-start">
             <div class="dropdown">
@@ -149,10 +149,7 @@
                     '.$this->navClassMobileButton.'
                 </div>
                 <ul tabindex="0" class="'.$this->navULClass.'">
-                    ';
-            foreach($this->navULMobile($array) as $item => $value);
-                $return .= '<li><a href="'.$value.'">'.$item.'</a></li>';
-            $return .= '
+                    '.print_r($this->navUL($array), true).'
                 </ul>
             </div>
             <div><img src="'.$this->navImg.'" class="'.$this->navImgClass.'" alt=""></div>
@@ -160,12 +157,11 @@
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-secondary dark:text-gray-100">
-                '.$this->navUL($array, $class).'
+                
             </ul>
         </div>
         '.$this->navButton.'
     </div>
 </nav>';
-            return $return;
         }
     }

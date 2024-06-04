@@ -8,7 +8,7 @@
         public function __construct() {
             define('template', $_ENV['TEMPLATE']);
             define("app_name", $_ENV["APP_NAME"]);
-            /*define("site_url", $_ENV["SITE_URL"]);
+            define("site_url", $_ENV["SITE_URL"]);
             
             
             define("live_server", filter_var($_ENV["LIVE_SERVER"]??false, FILTER_VALIDATE_BOOLEAN));
@@ -34,7 +34,7 @@
             define("domain_cookie_name", $_ENV["DOMAIN_COOKIE_NAME"]);
             define("login_cookie_name", $_ENV["LOGIN_COOKIE_NAME"]);
             define("cookie_lifetime", $_ENV["COOKIE_LIFETIME"]);
-            define("remember_cookie", $_ENV["LOGIN_REMEMBER"]);*/
+            define("remember_cookie", $_ENV["LOGIN_REMEMBER"]);
             
         }
         
