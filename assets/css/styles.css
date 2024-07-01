@@ -4676,6 +4676,10 @@ details.collapse summary::-webkit-details-marker {
   color: rgba(252, 233, 231, 1);
 }
 
+.hover\:text-flushMahogany-800:hover {
+  color: rgba(144, 33, 47, 1);
+}
+
 .hover\:text-gold-300:hover {
   color: rgba(255, 244, 65, 1);
 }
@@ -4700,10 +4704,6 @@ details.collapse summary::-webkit-details-marker {
 
 .hover\:text-yellow-metal-300:hover {
   color: var(--yellow-metal-300);
-}
-
-.hover\:text-flushMahogany-800:hover {
-  color: rgba(144, 33, 47, 1);
 }
 
 .hover\:underline:hover {
