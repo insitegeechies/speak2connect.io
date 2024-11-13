@@ -11,3 +11,4 @@ assets/server/
 assets/templates/
 assets/composer.json
 assets/composer.lock
+assets/images/profiles/*.psd
