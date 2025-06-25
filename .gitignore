@@ -6,6 +6,8 @@ back-index.html
 back-contact.html
 back-services.html
 the-team.html
+*.env
+assets/server/.env
 assets/vendor/
 assets/server/
 assets/templates/
